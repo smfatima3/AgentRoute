@@ -8,7 +8,7 @@ from huggingface_hub import login
 from kaggle_secrets import UserSecretsClient
 
 # --- Configuration ---
-OUTPUT_FILE = "CustomerServ-1K.jsonl"
+OUTPUT_FILE = "CustomerServ-10K.jsonl"
 NUM_SAMPLES_TO_GENERATE = 10000
 SAMPLES_PER_API_CALL = 10
 MODEL_ID = "google/gemma-2-2b-it" # Using the new Gemma 2 instruction-tuned model
