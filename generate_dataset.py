@@ -10,7 +10,7 @@ from kaggle_secrets import UserSecretsClient
 # --- Configuration ---
 OUTPUT_FILE = "CustomerServ-10K.jsonl"
 NUM_SAMPLES_TO_GENERATE = 10000
-SAMPLES_PER_API_CALL = 10
+SAMPLES_PER_API_CALL = 100
 MODEL_ID = "google/gemma-2-2b-it" # Using the new Gemma 2 instruction-tuned model
 
 def setup_gemma_pipeline():
