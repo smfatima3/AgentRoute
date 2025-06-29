@@ -54,7 +54,7 @@ def setup_gemma_pipeline():
 def generate_queries():
     """
     Uses a local Gemma model to generate the benchmark dataset.
-    UPDATED with more robust parsing and error debugging.
+    FINAL VERSION: With simplified pipeline output and robust parsing.
     """
     pipeline = setup_gemma_pipeline()
     
@@ -63,75 +63,58 @@ def generate_queries():
     with open(OUTPUT_FILE, 'w') as f:
         num_generated = 0
         retries = 0
-        max_retries = 20 # Stop after too many consecutive errors
+        max_retries = 20
 
         while num_generated < NUM_SAMPLES_TO_GENERATE and retries < max_retries:
             print(f"Generating batch... ({num_generated}/{NUM_SAMPLES_TO_GENERATE})")
             
+            # The prompt now instructs the model what to do, without priming the output.
             prompt = f"""<bos><start_of_turn>user
 Generate {SAMPLES_PER_API_CALL} unique, realistic e-commerce customer service queries.
 For each query, provide a JSON object with two keys:
 1. "query_text": The full text of the customer's request.
 2. "ground_truth_specialty": The correct department for the query, chosen from one of the following exact strings: ["customer returns and refunds", "technical support for software", "legal contract review"].
 
-RULES:
-- Ensure a balanced distribution among the three specialties.
-- Your output must be ONLY a valid JSON list of objects, enclosed in ```json ... ```. Do not add any other text or explanation.
+Your output must be ONLY a valid JSON list of objects. Do not add any other text or explanation.
 <end_of_turn>
 <start_of_turn>model
-```json
 """
             
             try:
+                # --- KEY CHANGE 1: We tell the pipeline to return ONLY the new text ---
                 outputs = pipeline(
                     prompt,
                     max_new_tokens=1024,
                     do_sample=True,
                     temperature=0.7,
                     top_k=50,
-                    top_p=0.95
+                    top_p=0.95,
+                    return_full_text=False # This is the crucial change
                 )
                 
+                # 'generated_text' now contains ONLY the model's response
                 generated_text = outputs[0]['generated_text']
 
-                # --- NEW ROBUST PARSING LOGIC ---
-                # Find the start and end of the JSON block
-                start_marker = "```json"
-                end_marker = "```"
+                # --- KEY CHANGE 2: Simpler, more robust parsing ---
+                # The model's output should start with '[' and end with ']'
+                start_index = generated_text.find('[')
+                end_index = generated_text.rfind(']') # Find the last ']'
                 
-                start_index = generated_text.find(start_marker)
-                
-                # If the start marker is found, find the end marker after it
-                if start_index != -1:
-                    # Adjust start_index to be after the marker itself
-                    start_index += len(start_marker)
-                    end_index = generated_text.find(end_marker, start_index)
-                    
-                    if end_index != -1:
-                        # Extract the JSON part
-                        json_part = generated_text[start_index:end_index].strip()
-                        
-                        # Now, attempt to parse the extracted part
-                        queries = json.loads(json_part)
+                if start_index != -1 and end_index != -1:
+                    json_part = generated_text[start_index : end_index + 1].strip()
+                    queries = json.loads(json_part)
 
-                        for query in queries:
-                            if num_generated < NUM_SAMPLES_TO_GENERATE:
-                                f.write(json.dumps(query) + '\n')
-                                num_generated += 1
-                        
-                        print(f"Successfully generated and wrote {len(queries)} samples.")
-                        retries = 0 # Reset retry counter on success
-                    else:
-                        # This case means we found ```json but not the closing ```
-                        raise ValueError("Found JSON start marker but no end marker.")
+                    for query in queries:
+                        if num_generated < NUM_SAMPLES_TO_GENERATE:
+                            f.write(json.dumps(query) + '\n')
+                            num_generated += 1
+                    
+                    print(f"Successfully generated and wrote {len(queries)} samples.")
+                    retries = 0
                 else:
-                    # This case means the model didn't even start with ```json
-                    raise ValueError("JSON start marker not found in model output.")
+                    raise ValueError("Could not find start '[' or end ']' in the generated text.")
 
             except Exception as e:
-                # --- NEW DEBUGGING PRINT ---
-                # This is the most important part for debugging.
-                # It shows us what the model ACTUALLY generated.
                 print(f"An error occurred during generation or parsing: {e}")
                 print("------ MODEL'S RAW OUTPUT ------")
                 if 'outputs' in locals() and outputs:
