@@ -112,7 +112,7 @@ if __name__ == "__main__":
     # 1. Load the generated dataset from your Kaggle Dataset path or local path
     # Example for Kaggle Dataset:
     dataset_path = "/kaggle/input/agentroute-customer-service-queries/CustomerServ-5K.jsonl"
-    dataset_path = "CustomerServ-1K.jsonl" # Assuming it's in the same directory
+   # dataset_path = "CustomerServ-1K.jsonl" # Assuming it's in the same directory
     
     try:
         with open(dataset_path, 'r') as f:
