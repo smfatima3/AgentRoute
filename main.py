@@ -1,59 +1,69 @@
 # main.py
 
+import time
+
 from lns.in_memory_lns import InMemoryLNS
 from broker.ats_broker import ATSBroker
+from core.message_queue import SimulatedMessageQueue
+from core.base_agent import BaseAgent
 
 def run_demonstration():
     """
-    A demonstration script showcasing the REFINED AgentRoute workflow.
+    Demonstrates the full, end-to-end workflow of the AgentRoute system.
     """
-    # --- Setup Phase 1: The Location Naming Service ---
-    print("--- LNS Setup ---")
+    # --- Part 1: System Initialization ---
+    print("--- System Initialization ---")
     lns = InMemoryLNS()
-
-    lns.register_agent(
-        agent_id="returns_specialist_001",
-        capabilities=["Handles customer returns, refunds, and exchanges for products."],
-        location_context="aws:us-east-1"
-    )
-    lns.register_agent(
-        agent_id="returns_specialist_002",
-        capabilities=["Specializes in processing e-commerce refunds and return merchandise authorizations (RMA)."],
-        location_context="aws:us-west-2"
-    )
-    lns.register_agent(
-        agent_id="tech_support_007",
-        capabilities=["Troubleshoots software login errors and application bugs."],
-        location_context="gcp:europe-west-3"
-    )
-
-    # CRITICAL: Set loads to create a clear test case.
-    # The best specialist is moderately busy.
-    # The second-best specialist is very busy.
-    # The irrelevant tech support agent is completely free.
-    lns.update_agent_status(agent_id="returns_specialist_001", load_factor=0.3)
-    lns.update_agent_status(agent_id="returns_specialist_002", load_factor=0.9)
-    lns.update_agent_status(agent_id="tech_support_007", load_factor=0.0)
-    print("LNS setup complete. Agents are registered and status updated.")
-    
-    # --- Setup Phase 2: The Active Tuple Space Broker ---
-    print("\n--- ATSBroker Setup ---")
-    # Initialize with a similarity threshold of 0.6.
+    queue = SimulatedMessageQueue()
     broker = ATSBroker(lns_instance=lns, similarity_threshold=0.6)
     
-    # --- Execution Phase: Route a Query ---
-    user_query = "My item arrived broken, I want my money back."
+    # --- Part 2: Agent Creation ---
+    # Agents are now independent objects that register themselves with the LNS.
+    print("\n--- Agent Creation ---")
+    agents = [
+        BaseAgent(
+            agent_id="returns_specialist_001",
+            capabilities=["Handles customer returns, refunds, and exchanges."],
+            lns_instance=lns, queue_instance=queue
+        ),
+        BaseAgent(
+            agent_id="tech_support_007",
+            capabilities=["Troubleshoots software login errors and application bugs."],
+            lns_instance=lns, queue_instance=queue
+        )
+    ]
+    # Set a load factor for one of the agents
+    lns.update_agent_status(agents[0].agent_id, load_factor=0.3)
     
+    # --- Part 3: Simulating a User Request through the Broker ---
+    print("\n--- Simulating User Request ---")
+    user_query = "My account is locked and I can't log in."
+    
+    # The broker decides where to route the query
     routing_decision = broker.route_query(user_query)
-
-    print("\n--- Final Routing Decision ---")
+    
     if routing_decision['status'] == 'success':
-        agent_id = routing_decision['routed_to_agent_id']
-        load = routing_decision['details']['load_factor']
-        print(f"✅ Success! Query routed to agent: {agent_id}")
-        print(f"   Reason: This agent passed the semantic threshold and had the lowest load among QUALIFIED candidates.")
+        # The broker now PUBLISHES a message instead of just returning a decision
+        target_agent_id = routing_decision['routed_to_agent_id']
+        message = {
+            "type": "USER_QUERY",
+            "payload": user_query,
+            "timestamp": time.time()
+        }
+        queue.publish(topic=target_agent_id, message=message)
     else:
-        print(f"❌ Failed to route query. Reason: {routing_decision['reason']}")
+        print("Broker failed to route the query. Halting simulation.")
+        return
+
+    # --- Part 4: Simulating the Agent Run Loop ---
+    # In a real system, agents would run in parallel threads/processes.
+    # Here, we simulate this by looping and letting each agent check its messages.
+    print("\n--- Simulating Agent Work Cycle (5 steps) ---")
+    for i in range(5):
+        print(f"\n--- Cycle {i+1} ---")
+        for agent in agents:
+            agent.check_for_messages()
+        time.sleep(0.2) # Wait a bit between cycles
 
 if __name__ == "__main__":
     run_demonstration()
