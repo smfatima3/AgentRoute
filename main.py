@@ -1,91 +1,60 @@
 # main.py
 
-from lns.lns_service import LocationNamingService
-import time
+from lns.in_memory_lns import InMemoryLNS
+from broker.ats_broker import ATSBroker
 
 def run_demonstration():
     """
-    A demonstration script to showcase the LNS functionality.
+    A demonstration script showcasing the full AgentRoute workflow:
+    1. Initialize LNS and register agents.
+    2. Initialize ATSBroker with the LNS.
+    3. Route queries through the broker and observe the intelligent routing.
     """
-    try:
-        # Initialize the service. This will load the model and connect to Redis.
-        lns = LocationNamingService()
-    except Exception as e:
-        print(f"Failed to initialize LNS. Please ensure Redis is running. Error: {e}")
-        return
+    # --- Setup Phase 1: The Location Naming Service ---
+    print("--- LNS Setup ---")
+    lns = InMemoryLNS()
 
-    print("\n--- Phase 1: Registering Agents ---")
-    
-    # Agent 1: A specialist in handling customer returns and refunds.
+    # Register our specialist agents
     lns.register_agent(
         agent_id="returns_specialist_001",
-        capabilities=[
-            "Processes customer return requests for e-commerce products.",
-            "Issues refunds according to company policy.",
-            "Handles inquiries about return status and shipping labels."
-        ],
-        location_context="aws:us-east-1:e-commerce_prod",
-        metadata={"team": "Customer Support", "priority_level": 2}
+        capabilities=["Handles customer returns, refunds, and exchanges for products."],
+        location_context="aws:us-east-1"
     )
-
-    # Agent 2: A technical support agent for software issues.
+    lns.register_agent(
+        agent_id="returns_specialist_002",
+        capabilities=["Specializes in processing e-commerce refunds and return merchandise authorizations (RMA)."],
+        location_context="aws:us-west-2"
+    )
     lns.register_agent(
         agent_id="tech_support_007",
-        capabilities=[
-            "Troubleshoots software installation problems.",
-            "Assists users with account login and password resets.",
-            "Diagnoses and resolves application bugs and errors."
-        ],
-        location_context="gcp:europe-west-3:saas_platform",
-        metadata={"team": "Technical Operations", "expertise": "Python, Docker"}
-    )
-    
-    # Agent 3: A legal agent specializing in contracts.
-    lns.register_agent(
-        agent_id="legal_advisor_003",
-        capabilities=[
-            "Reviews and analyzes legal contracts for compliance.",
-            "Provides advice on intellectual property and data privacy laws (GDPR, CCPA).",
-            "Drafts non-disclosure agreements (NDAs)."
-        ],
-        location_context="azure:west-us:legal_dept_secure",
-        metadata={"team": "Legal", "bar_admission": "California"}
+        capabilities=["Troubleshoots software login errors and application bugs."],
+        location_context="gcp:europe-west-3"
     )
 
-    print("\n--- Phase 2: Updating Agent Status ---")
-    # Simulate the tech support agent being busy.
-    lns.update_agent_status(agent_id="tech_support_007", load_factor=0.85)
-    print("Updated load factor for tech_support_007 to 0.85")
-
-    # Let some time pass
-    time.sleep(1)
-    lns.update_agent_status(agent_id="returns_specialist_001", load_factor=0.10)
-    print("Updated load factor for returns_specialist_001 to 0.10")
-
-
-    print("\n--- Phase 3: Finding Capable Agents (Semantic Search) ---")
+    # Simulate different loads. Agent 001 is less busy than Agent 002.
+    lns.update_agent_status(agent_id="returns_specialist_001", load_factor=0.2)
+    lns.update_agent_status(agent_id="returns_specialist_002", load_factor=0.9)
+    print("LNS setup complete. Agents are registered and status updated.")
     
-    # Scenario: A user has a query about getting their money back for a broken item.
-    user_query = "I bought a laptop and the screen is cracked. I want to send it back and get my money back."
+    # --- Setup Phase 2: The Active Tuple Space Broker ---
+    print("\n--- ATSBroker Setup ---")
+    broker = ATSBroker(lns_instance=lns)
     
-    top_agents = lns.find_capable_agents(user_query, top_k=3)
+    # --- Execution Phase: Route a Query ---
+    # This query should be classified as a "returns/refund" issue.
+    # The broker must then choose between the two returns specialists.
+    user_query = "My item arrived broken, I want my money back."
+    
+    routing_decision = broker.route_query(user_query)
 
-    if top_agents:
-        print(f"\nTop matching agents for query: '{user_query}'")
-        for agent in top_agents:
-            # Retrieve full details for the top agent to show all information
-            details = lns.get_agent_details(agent['agent_id'])
-            print(
-                f"  - Agent ID: {agent['agent_id']} "
-                f"(Score: {agent['similarity_score']:.4f}) "
-                f"| Location: {details['location_context']} "
-                f"| Load: {details['load_factor']}"
-            )
+    print("\n--- Final Routing Decision ---")
+    if routing_decision['status'] == 'success':
+        agent_id = routing_decision['routed_to_agent_id']
+        load = routing_decision['details']['load_factor']
+        print(f"✅ Success! Query routed to agent: {agent_id}")
+        print(f"   Reason: This agent was the best semantic match with the lowest load factor ({load}).")
     else:
-        print("Could not find any suitable agents for the query.")
+        print(f"❌ Failed to route query. Reason: {routing_decision['reason']}")
 
 if __name__ == "__main__":
-    # To run this, you must have a Redis server running locally.
-    # If you are using Docker, you can start one with:
-    # docker run --name agentroute-redis -p 6379:6379 -d redis
     run_demonstration()
