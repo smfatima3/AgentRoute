@@ -7,7 +7,7 @@ import time
 # --- Configuration ---
 # IMPORTANT: Set up your API key. In Kaggle, use the "Secrets" feature.
 # genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-genai.configure(api_key="YOUR_API_KEY_HERE") # Or paste it here for a quick test
+genai.configure(api_key="GOOGLE_API_KEY") # Or paste it here for a quick test
 
 OUTPUT_FILE = "CustomerServ-1K.jsonl" # Start with 1K for speed, can increase later
 NUM_SAMPLES_TO_GENERATE = 1000 # Your paper mentions 10K, but 1K is a good start
