@@ -2,7 +2,8 @@
 
 from typing import Dict, Any
 
-# We can use type hinting to allow for either LNS version
+# We can use type hinting to allow for either LNS version.
+# This makes the code editor-friendly and easier to understand.
 from lns.lns_service import LocationNamingService
 from lns.in_memory_lns import InMemoryLNS
 
@@ -17,18 +18,21 @@ class ATSBroker:
     routing rules (e.g., load balancing) to select the optimal agent.
     """
 
-    def __init__(self, lns_instance: LNS_TYPE):
+    def __init__(self, lns_instance: LNS_TYPE, similarity_threshold: float = 0.6):
         """
-        Initializes the broker with a connection to a Location Naming Service.
+        Initializes the broker.
 
         Args:
-            lns_instance: An initialized instance of either the real or in-memory LNS.
+            lns_instance: An initialized instance of a Location Naming Service.
+            similarity_threshold (float): The minimum semantic score for an agent
+                                          to be considered a valid candidate.
         """
         print("Initializing ATSBroker...")
         if not hasattr(lns_instance, 'find_capable_agents'):
             raise TypeError("lns_instance must be a valid LNS with a 'find_capable_agents' method.")
         self.lns = lns_instance
-        print("ATSBroker initialized successfully.")
+        self.similarity_threshold = similarity_threshold
+        print(f"ATSBroker initialized successfully with similarity threshold: {self.similarity_threshold}")
 
     def _classify_query_mock(self, query: str) -> str:
         """
@@ -52,8 +56,7 @@ class ATSBroker:
 
     def select_optimal_agent(self, candidates: list) -> Dict[str, Any] | None:
         """
-        Selects the best agent from a list of candidates based on load factor.
-        This implements the "context-aware routing with load balancing".
+        Selects the best agent from a list of QUALIFIED candidates based on load factor.
         """
         if not candidates:
             return None
@@ -61,42 +64,54 @@ class ATSBroker:
         best_agent = None
         lowest_load = float('inf')
 
-        print(f"Selecting optimal agent from {len(candidates)} candidate(s)...")
+        print(f"Selecting optimal agent from {len(candidates)} qualified candidate(s)...")
         for candidate in candidates:
             agent_id = candidate['agent_id']
             details = self.lns.get_agent_details(agent_id)
             if details:
                 load = float(details['load_factor'])
-                print(f"  - Evaluating Agent: {agent_id}, Load: {load}")
+                print(f"  - Evaluating Agent: {agent_id}, Score: {candidate['similarity_score']:.4f}, Load: {load}")
                 if load < lowest_load:
                     lowest_load = load
                     best_agent = details
-                    best_agent['agent_id'] = agent_id # ensure agent_id is in the dict
+                    # Ensure agent_id is part of the returned dictionary
+                    best_agent['agent_id'] = agent_id
         
         return best_agent
 
-
     def route_query(self, query: str) -> Dict[str, Any]:
         """
-        The main routing pipeline for an incoming query.
+        The main routing pipeline for an incoming query with two-stage filtering.
         """
         print(f"\n--- Broker: New Query Received ---\nQuery: '{query}'")
 
-        # 1. Query classification using a lightweight LLM (mocked for now)
+        # 1. Classify the query
         classified_capability = self._classify_query_mock(query)
         print(f"Broker: Query classified as -> '{classified_capability}'")
 
-        # 2. Capability matching against agent registry via LNS
-        # We find all agents that are semantically similar to the classified capability.
-        capable_agents = self.lns.find_capable_agents(classified_capability, top_k=5)
+        # 2. Find all potentially relevant agents from LNS
+        all_candidates = self.lns.find_capable_agents(classified_capability, top_k=5)
 
-        if not capable_agents:
-            print("Broker: No capable agents found in LNS.")
+        if not all_candidates:
+            print("Broker: No agents found in LNS for this classification.")
             return {"status": "failed", "reason": "no_agents_found"}
 
-        # 3. Context-aware routing with load balancing
-        # From the list of capable agents, select the one with the lowest load.
-        selected_agent = self.select_optimal_agent(capable_agents)
+        # --- REFINED LOGIC: Step 3 - Semantic Filtering ---
+        print(f"Broker: Applying semantic similarity threshold > {self.similarity_threshold}")
+        qualified_candidates = []
+        for agent in all_candidates:
+            if agent['similarity_score'] >= self.similarity_threshold:
+                qualified_candidates.append(agent)
+                print(f"  - ✅ Kept: {agent['agent_id']} (Score: {agent['similarity_score']:.4f})")
+            else:
+                print(f"  - ❌ Discarded: {agent['agent_id']} (Score: {agent['similarity_score']:.4f} is too low)")
+        
+        if not qualified_candidates:
+            print("Broker: No agents passed the similarity threshold.")
+            return {"status": "failed", "reason": "no_sufficiently_similar_agents"}
+
+        # --- Step 4: Load Balancing (on the qualified pool only) ---
+        selected_agent = self.select_optimal_agent(qualified_candidates)
 
         if not selected_agent:
             print("Broker: Could not retrieve details for candidate agents.")
@@ -105,9 +120,7 @@ class ATSBroker:
         agent_id = selected_agent['agent_id']
         print(f"Broker: Optimal agent selected -> {agent_id} (Load: {selected_agent['load_factor']})")
         
-        # 4. Response aggregation and filtering (simplified)
-        # In a real system, this would involve sending the message and getting a response.
-        # Here, we just return the routing decision.
+        # 5. Return the final decision
         return {
             "status": "success",
             "routed_to_agent_id": agent_id,
