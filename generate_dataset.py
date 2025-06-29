@@ -3,11 +3,12 @@ import google.generativeai as genai
 import json
 import os
 import time
+from kaggle_secrets import UserSecretsClient
 
-# --- Configuration ---
-# IMPORTANT: Set up your API key. In Kaggle, use the "Secrets" feature.
-# genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-genai.configure(api_key="GOOGLE_API_KEY") # Or paste it here for a quick test
+# verification of google_api_key
+user_secrets = UserSecretsClient()
+google_api_key = user_secrets.get_secret("GOOGLE_API_KEY")
+genai.configure(api_key=google_api_key)
 
 OUTPUT_FILE = "CustomerServ-1K.jsonl" # Start with 1K for speed, can increase later
 NUM_SAMPLES_TO_GENERATE = 1000 # Your paper mentions 10K, but 1K is a good start
