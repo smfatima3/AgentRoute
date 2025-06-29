@@ -1,6 +1,7 @@
 # main.py
 
-from lns.lns_service import LocationNamingService
+# CHANGE THIS LINE: from lns.lns_service import LocationNamingService
+from lns.in_memory_lns import InMemoryLNS # Use the in-memory version
 import time
 
 def run_demonstration():
@@ -8,12 +9,15 @@ def run_demonstration():
     A demonstration script to showcase the LNS functionality.
     """
     try:
-        # Initialize the service. This will load the model and connect to Redis.
-        lns = LocationNamingService()
+        # CHANGE THIS LINE: lns = LocationNamingService()
+        lns = InMemoryLNS() # Initialize the in-memory service
     except Exception as e:
-        print(f"Failed to initialize LNS. Please ensure Redis is running. Error: {e}")
+        # This error message is now more focused on model loading issues
+        print(f"Failed to initialize LNS. Please check model and dependencies. Error: {e}")
         return
 
+    # ... the rest of the file remains exactly the same ...
+    
     print("\n--- Phase 1: Registering Agents ---")
     
     # Agent 1: A specialist in handling customer returns and refunds.
@@ -85,7 +89,4 @@ def run_demonstration():
         print("Could not find any suitable agents for the query.")
 
 if __name__ == "__main__":
-    # To run this, you must have a Redis server running locally.
-    # If you are using Docker, you can start one with:
-    # docker run --name agentroute-redis -p 6379:6379 -d redis
     run_demonstration()
