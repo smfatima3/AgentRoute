@@ -130,3 +130,33 @@ class ATSBroker:
             "routed_to_agent_id": agent_id,
             "details": selected_agent
         }
+
+class BroadcastBroker:
+    """A simple broker that broadcasts the query to all agents."""
+    def __init__(self, lns_instance, queue_instance):
+        self.lns = lns_instance
+        self.queue = queue_instance
+
+    def route_query(self, query: str, sender_id: str):
+        # In a real system, you would get all agents from the LNS.
+        # For our simulation, we know the agent IDs.
+        all_agent_ids = self.lns.agent_metadata.keys()
+        message = {"type": "BROADCAST_QUERY", "payload": query}
+        
+        hops = 0
+        for agent_id in all_agent_ids:
+            if agent_id != sender_id: # Don't send it back to the originator
+                self.queue.publish(agent_id, message)
+                hops += 1
+        return hops
+
+class HierarchicalBroker:
+    """A broker that routes all queries to a single 'coordinator' agent."""
+    def __init__(self, queue_instance, coordinator_id: str):
+        self.queue = queue_instance
+        self.coordinator_id = coordinator_id
+
+    def route_query(self, query: str):
+        message = {"type": "HIERARCHICAL_QUERY", "payload": query}
+        self.queue.publish(self.coordinator_id, message)
+        return 1 # Always 1 hop to the coordinator
