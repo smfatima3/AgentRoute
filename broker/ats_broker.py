@@ -38,21 +38,25 @@ class ATSBroker:
         """
         A mock/simulated lightweight LLM for query classification.
         
-        In a real implementation, this would call an LLM API. Here, we use
-        simple keywords to simulate the classification process for development.
-
-        Returns:
-            A string representing the classified capability.
+        UPDATE: Added more keywords to make the classification more robust.
         """
         query_lower = query.lower()
+        
+        # Condition for returns/refunds
         if "refund" in query_lower or "return" in query_lower or "cracked" in query_lower or "broken" in query_lower:
             return "customer returns and refunds"
-        elif "login" in query_lower or "password" in query_lower or "bug" in query_lower or "error" in query_lower:
+        
+        # --- UPDATED CONDITION for technical support ---
+        elif "login" in query_lower or "password" in query_lower or "bug" in query_lower or "error" in query_lower or "account" in query_lower or "locked" in query_lower:
             return "technical support for software"
+            
+        # Condition for legal inquiries
         elif "contract" in query_lower or "legal" in query_lower or "nda" in query_lower:
             return "legal contract review"
+            
+        # Fallback
         else:
-            return "general inquiry" # Fallback classification
+            return "general inquiry"
 
     def select_optimal_agent(self, candidates: list) -> Dict[str, Any] | None:
         """
