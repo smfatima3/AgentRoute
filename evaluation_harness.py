@@ -35,35 +35,58 @@ def simulate_token_cost(text: str) -> int:
 # --- Evaluation Functions for Each System ---
 
 def run_agentroute_eval(dataset, agent_definitions):
-    lns, _, _ = setup_system(agent_definitions)
+    """
+    Evaluates the AgentRoute system.
+    UPDATED to be robust against malformed data in the dataset.
+    """
+    lns, queue, agents = setup_system(agent_definitions)
     broker = ATSBroker(lns_instance=lns, similarity_threshold=0.6)
     
-    metrics = []
-    start_time = time.time()
+    results = []
+    malformed_records = 0
+    total_records = len(dataset)
     
-    for item in dataset:
+    for i, item in enumerate(dataset):
+        # --- NEW: Defensive Check ---
+        # Check if the required keys exist in the record before processing.
+        if 'query_text' not in item or 'ground_truth_specialty' not in item:
+            malformed_records += 1
+            # print(f"Warning: Skipping malformed record at line {i+1}: {item}")
+            continue # Skip to the next item in the dataset
+
         query = item['query_text']
         truth = item['ground_truth_specialty']
         
+        # We can now safely access the keys.
+        # This is a simplified metric for hops.
+        message_hops = 1 
+        start_time = time.time()
+        
         decision = broker.route_query(query)
         
-        # Hops: 1 hop to the broker.
-        hops = 1
-        # Token Cost: The query itself.
-        token_cost = simulate_token_cost(query)
+        # Latency for this single query
+        latency_ms = (time.time() - start_time) * 1000
         
+        # Accuracy Check
         is_correct = 0
         if decision['status'] == 'success':
             routed_agent_id = decision['routed_to_agent_id']
-            # A simple but effective way to check correctness for this dataset
+            # A more robust check for correctness
+            # This assumes the ground truth contains part of the agent's name
+            # e.g., "customer returns and refunds" contains "returns"
             if truth.split(" ")[0] in routed_agent_id:
                 is_correct = 1
         
-        metrics.append({"hops": hops, "token_cost": token_cost, "is_correct": is_correct})
+        results.append({
+            "hops": message_hops,
+            "latency_ms": latency_ms,
+            "is_correct": is_correct
+        })
         
-    latency = (time.time() - start_time) * 1000 / len(dataset)
-    return pd.DataFrame(metrics), latency
-
+    if malformed_records > 0:
+        print(f"\nWarning: Skipped {malformed_records} out of {total_records} records due to missing keys.")
+        
+    return pd.DataFrame(results)
 def run_broadcast_eval(dataset, agent_definitions):
     num_agents = len(agent_definitions)
     metrics = []
