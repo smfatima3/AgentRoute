@@ -137,7 +137,7 @@ if __name__ == "__main__":
     # dataset_path = "/kaggle/input/agentroute-customer-service-queries/CustomerServ-5K.jsonl"
     
      # 1. Load the generated datase
-    dataset_path = "/kaggle/input/agentroute-customer-service-queries/CustomerServ-5K.jsonl"
+    dataset_path = "/content/AgentRoute/CustomerServ-5K.jsonl"
     with open(dataset_path, 'r') as f:
         dataset = [json.loads(line) for line in f]
 
