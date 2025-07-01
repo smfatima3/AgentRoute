@@ -134,7 +134,17 @@ def run_hierarchical_eval(dataset, agent_definitions):
 if __name__ == "__main__":
     # 1. Load the generated dataset from your Kaggle Dataset path or local path
     # Example for Kaggle Dataset:
+    # dataset_path = "/kaggle/input/agentroute-customer-service-queries/CustomerServ-5K.jsonl"
+    
+     # 1. Load the generated datase
     dataset_path = "/kaggle/input/agentroute-customer-service-queries/CustomerServ-5K.jsonl"
+    with open(dataset_path, 'r') as f:
+        dataset = [json.loads(line) for line in f]
+
+    # --- NEW LINE TO LIMIT DATASET SIZE ---
+    dataset = dataset[:2000]
+    
+    print(f"Loaded {len(dataset)} queries for evaluation (limited for speed).")
    ## dataset_path = "CustomerServ-1K.jsonl" # Assuming it's in the same directory
     
     try:
