@@ -1,0 +1,336 @@
+% AgentRoute — EMNLP 2026 Industry Track submission
+%
+% Double-blind review: no author names, no affiliations, no self-identifying URLs.
+% Page limit: 6 pages of main body (references, Limitations, Ethical Considerations,
+% appendices, and acknowledgments do not count).
+%
+% This file uses the standard ACL 2026 style files (acl.sty + acl_natbib.bst).
+% Download from https://github.com/acl-org/acl-style-files and place
+% acl.sty + acl_natbib.bst alongside this file before compiling.
+
+\documentclass[11pt]{article}
+
+% Use the [review] option for the anonymous submission version.
+% For the camera-ready version, replace with \usepackage{acl}.
+\usepackage[review]{acl}
+
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+
+% Avoid duplicate citation/hyperref warnings; natbib is loaded by acl.sty.
+
+\title{AgentRoute: A Production Communication Layer for \\
+       Multi-Agent LLM Systems with Zero Routing Overhead}
+
+\author{Anonymous Submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Large language model (LLM)-based multi-agent systems are increasingly deployed
+in production, but their communication overhead grows with both the number of
+registered agents and the complexity of the routing policy. Recent routing
+methods (MasRouter, RopMura, OI-MAS, RCR-Router, EvoMAS, DyTopo) reduce
+message-payload tokens between agents, yet the routing decision itself
+typically requires multiple LLM calls, a trained controller, or both---a fixed
+cost that becomes the binding constraint at production scale. We present
+AgentRoute, a deterministic communication layer that combines a pattern-based
+domain classifier, an LRU result cache, and an optional small-model fallback
+for low-confidence queries. AgentRoute issues exactly one LLM call to the
+chosen specialist per resolved query, uses no learned components, and has
+zero training cost. We compare AgentRoute to five 2025--2026 baselines on
+MedQA-USMLE and GPQA Diamond using a shared Qwen 2.5--3B backbone, study
+scalability up to 200 agents, and report a production case study against the
+Claude API. Our results characterise the regime where the routing layer's
+fixed cost dominates and a deterministic router is the appropriate design
+choice.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Multi-agent LLM systems are now deployed in production across coding
+assistants, customer support, agentic workflow automation, and biomedical
+question answering. These systems decompose tasks across role-typed agents
+that exchange natural-language messages \citep{wu2023autogen,hong2024metagpt,
+li2023camel,qian2024chatdev,chen2024agentverse}, and as the number of
+registered agents grows, the communication layer between them becomes a
+non-trivial fraction of the total system cost. An empirical study of seven
+multi-agent frameworks attributes a substantial fraction of system failures to
+\emph{inter-agent communication} faults rather than to any individual agent's
+reasoning errors~\citep{cemri2025why}, motivating recent work on more
+selective routing.
+
+The recent routing literature has converged on increasingly expressive
+controllers. MasRouter trains a cascaded controller that jointly chooses
+collaboration mode, role assignment, and LLM
+backbone~\citep{yue2025masrouter}. RopMura introduces a four-submodule planner
+(question splitter, question selector, judger, defender) with
+cluster-embedding routing across knowledge agents~\citep{wang2025ropmura}.
+OI-MAS uses state-dependent role and model routing with confidence-aware
+early termination~\citep{wang2026oimas}. RCR-Router introduces role-aware
+context routing under per-role token budgets and an importance
+scorer~\citep{liu2025rcrrouter}. EvoMAS maintains and mutates a pool of
+multi-agent system configurations~\citep{evomas2026}, and DyTopo rebuilds the
+communication topology each round through semantic key/query
+matching~\citep{lu2026dytopo}. These methods reduce the \emph{message payload}
+between agents, often by 30--70\%, on a range of multi-hop reasoning
+benchmarks.
+
+\paragraph{The production gap.}
+In production deployments operating at scale, however, what matters is not
+only the message payload but the cost of the routing layer itself. A router
+that calls an LLM two to three times per query, or that requires
+training on per-task data, has a fixed cost that grows with traffic
+independent of how much it shrinks the message payload. For the production
+operator, three properties of the routing layer dominate: predictable
+sub-call latency, bounded per-query token budget, and an auditable decision
+trace. None of these are first-class concerns in the recent routing
+literature, which is largely benchmarked on offline accuracy at fixed
+query counts.
+
+\paragraph{Our claim.}
+This paper asks whether a deterministic, training-free routing layer can
+match learned and multi-call routers on accuracy, while preserving an
+order-of-magnitude advantage on latency and on per-query cost, and
+\emph{scaling cleanly with the agent pool size}. We instantiate this
+question as AgentRoute (Section~\ref{sec:design}), an LLM-era adaptation of
+the Actor Architecture of~\citet{jang2005efficient}. AgentRoute uses a
+substring-based pattern classifier with an LRU cache for the routing
+decision, and falls back to a small-model classifier only on low-confidence
+queries. The classifier runs in sub-millisecond time, requires no training,
+and has zero token cost on cache hits and on confident pattern matches.
+
+\paragraph{Contributions.}
+We make four contributions, structured around production-relevant evidence:
+\begin{itemize}
+    \item A deterministic communication layer for multi-agent LLM systems
+    that issues exactly one LLM call per resolved query, with no training and
+    no learned components (Section~\ref{sec:design}).
+    \item Architecturally faithful re-implementations of five 2025--2026
+    routing baselines (MasRouter, RopMura, OI-MAS, RCR-Router, EvoMAS, DyTopo)
+    evaluated head-to-head against AgentRoute with a shared
+    Qwen 2.5--3B-Instruct backbone~\citep{qwen2025} on
+    MedQA-USMLE~\citep{jin2021medqa} and
+    GPQA Diamond~\citep{rein2024gpqa} (Section~\ref{sec:benchmarks}).
+    \item A scalability study sweeping the registered agent pool from 5 to
+    200 agents, characterising how routing-decision latency and per-query
+    tokens grow with $N$ for each method (Section~\ref{sec:scalability}).
+    \item A production case study against the Claude API with concurrent
+    rate-limit handling, budget tracking, and a deployment-narrative
+    discussion of what failed and what we learned
+    (Section~\ref{sec:casestudy}).
+\end{itemize}
+
+We do not claim that pattern-based routing is universally optimal: it
+inherits the limitations of its keyword inventory and cannot perform
+multi-hop decomposition. Our contribution is to characterise the regime
+where the routing layer's fixed cost is itself the binding production
+constraint, and to argue that this regime is common enough to warrant a
+deterministic baseline alongside the more expressive learned routers.
+
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Multi-agent LLM systems.}
+The dominant production paradigm decomposes tasks across role-typed agents
+that exchange natural-language messages. AutoGen formalises conversable
+multi-agent group chat~\citep{wu2023autogen}; MetaGPT instantiates
+SOP-driven assembly lines for software
+engineering~\citep{hong2024metagpt}; CAMEL~\citep{li2023camel},
+ChatDev~\citep{qian2024chatdev}, and AgentVerse~\citep{chen2024agentverse}
+explore role-playing, chat-chain communication, and dynamic team formation
+respectively. \citet{cemri2025why} provide an empirical failure taxonomy
+across seven frameworks and attribute a substantial fraction of failures
+to inter-agent communication errors, motivating selective routing.
+
+\paragraph{LLM routing for single-agent inference.}
+A parallel line of work routes individual queries to one of several
+available LLM backbones to trade quality for cost.
+\citet{chen2023frugalgpt} introduce the prompt-adaptation/cascade
+taxonomy. HybridLLM predicts query difficulty to choose between a small
+and a large model~\citep{ding2024hybridllm}; RouteLLM learns the router
+from preference data~\citep{ong2024routellm}; BEST-Route combines model
+selection with test-time best-of-$n$~\citep{ding2025bestroute}. These
+methods route \emph{queries to models} rather than \emph{messages between
+agents}, but they share the underlying goal of reducing avoidable LLM
+calls. AgentRoute applies the same cost-aware principle one layer up, at
+the inter-agent communication boundary.
+
+\paragraph{Routing and topology design within multi-agent systems.}
+Closer to our setting, GPTSwarm represents an LLM agent system as an
+optimisable graph~\citep{zhuge2024gptswarm}; G-Designer uses GNNs to
+design task-aware topologies offline~\citep{zhang2025gdesigner}; MaAS
+samples query-dependent agent architectures from an agentic
+supernet~\citep{zhang2025maas}; AFlow performs MCTS over agentic
+workflows~\citep{zhang2025aflow}; AgentPrune prunes communication edges
+once and reuses the pruned graph~\citep{zhang2025agentprune}. These
+methods optimise the \emph{structure} of multi-agent communication;
+AgentRoute is complementary in that it provides a deterministic
+\emph{runtime} routing mechanism that can sit on top of any of these
+topologies.
+
+\paragraph{Direct baselines.}
+The five direct baselines we compare against introduce additional cost in
+the routing layer itself. MasRouter trains a cascaded controller and
+invokes it per query~\citep{yue2025masrouter}. RopMura's planner uses
+four LLM-driven submodules with multi-hop
+iteration~\citep{wang2025ropmura}. OI-MAS adds a verifier and an optional
+refiner per query~\citep{wang2026oimas}. RCR-Router operates over three
+roles (Planner, Searcher, Recommender) for $T$ iterative rounds under
+per-role token budgets, with default $T{=}3$~\citep{liu2025rcrrouter}.
+EvoMAS evolves a pool of multi-agent configurations and samples one per
+query~\citep{evomas2026}. DyTopo runs a Manager plus four agents that
+rebuild the directed communication graph each round through embedding
+matching~\citep{lu2026dytopo}. AgentRoute occupies the opposite end of
+this design spectrum: a deterministic routing decision followed by a
+single LLM call to the chosen specialist.
+
+\paragraph{Actor-based middleware.}
+AgentRoute is an LLM-era adaptation of the Actor
+Architecture~\citep{jang2005efficient}, which introduced location-aware
+agent naming, middle-agent matchmaking, and delayed message buffering for
+mobile agents. We inherit the first two and replace the third (active
+brokering with mobile search objects) with deterministic pattern
+matching. This is a deliberate trade-off: we sacrifice the expressiveness
+of agent-supplied search code in exchange for predictable routing
+latency, an auditable decision trace, and zero per-routing-decision
+compute cost---properties that matter more than expressiveness in
+production deployments.
+
+% =====================================================================
+% Sections 4-7 + Limitations to follow.
+% Section 4: Benchmark Evaluation (MedQA)
+% Section 5: Scalability Study
+% Section 6: Production Case Study (Claude API)
+% Section 7: Discussion
+% Section 8: Conclusion
+% Limitations (mandatory, before references)
+% Appendix
+% =====================================================================
+
+\section{AgentRoute Design}
+\label{sec:design}
+
+AgentRoute is a thin communication layer placed between user-issued queries
+and a pool of registered specialist agents. Each query is processed by a
+five-step pipeline that issues at most one LLM call for routing and exactly
+one LLM call for answering. We describe the pipeline
+(\S\ref{sec:design:pipeline}), the design decisions inherited from the Actor
+Architecture~\citep{jang2005efficient} (\S\ref{sec:design:actor}), and the
+properties of the resulting system (\S\ref{sec:design:properties}).
+
+\subsection{Pipeline}
+\label{sec:design:pipeline}
+
+\paragraph{Step 1: Pattern-based domain classification.}
+Each domain $d \in \mathcal{D}$ is associated with a hand-curated keyword
+inventory $K_d$. For an incoming query $q$ we compute a per-domain score
+$s_d(q) = \sum_{k \in K_d} \mathbb{1}[k \in q] \cdot |k|$, in which longer
+keywords contribute more, and pick the highest-scoring domain. Confidence is
+the top score normalised by the second-best, bounded in $[0, 1]$. The
+classifier is implemented as a substring scan and runs in sub-millisecond
+time on commodity CPUs; it issues no LLM calls.
+
+\paragraph{Step 2: Confidence gating.}
+If confidence $\geq \tau$ (we use $\tau{=}0.6$ throughout), the predicted
+domain is accepted. Otherwise, a small-model fallback classifier is invoked
+to re-classify $q$ over $\mathcal{D}$. This is the only step in which
+AgentRoute spends LLM tokens for routing, and only on queries the pattern
+matcher cannot resolve.
+
+\paragraph{Step 3: LRU result cache.}
+A bounded-capacity cache mapping query hash to (domain, response) is
+consulted before any agent dispatch. On a cache hit, both the routing
+decision and the agent's response are reused with zero additional LLM
+calls. The cache is most effective for repeated or near-repeated queries;
+on workloads composed entirely of distinct queries the hit rate is zero,
+which we treat as the adversarial worst case.
+
+\paragraph{Step 4: Specialist selection.}
+A domain-indexed registry maps each domain to a set of specialist agents.
+Within the chosen domain, the least-loaded agent (by current outstanding
+request count) is selected. If every agent in the chosen domain is above
+an 85\,\% load threshold, the next-most-relevant domain is tried. Selection
+is deterministic given the load state and uses no LLM calls.
+
+\paragraph{Step 5: Single specialist invocation.}
+The selected agent receives the original query and produces the response in
+a single LLM call. AgentRoute thus issues exactly one LLM call to the
+chosen specialist per resolved query, with the optional fallback in Step 2
+being the only place additional tokens are consumed for routing.
+
+\subsection{Relation to the Actor Architecture}
+\label{sec:design:actor}
+
+AgentRoute instantiates two of the three core ideas
+of~\citet{jang2005efficient} in the LLM setting. The first is
+location-aware addressing: in the original Actor Architecture, agents carry
+both a universal name (UAN) and a location-based name (LAN) that updates as
+the agent migrates between hosts; in AgentRoute, the location is the
+domain registry entry, and the specialist-selection step plays the role of
+the Message Manager's directed forwarding. The second is middle-agent
+matchmaking: the Actor Architecture's ATSpace tuple space accepts service
+queries from clients and returns matching service agents; AgentRoute's
+pattern classifier plus LRU cache plays the same role for natural-language
+queries.
+
+The third Actor Architecture idea---\emph{active brokering with mobile
+search objects}, in which clients send executable code into the middle
+agent's address space to perform expressive searches---is deliberately
+not inherited. We replace it with deterministic pattern matching. This
+trades the expressiveness of agent-supplied search code for three
+properties that matter more in production deployments: predictable
+sub-millisecond routing latency, an auditable decision trace (every
+routing decision is a deterministic function of the query and the
+keyword inventory), and zero per-routing-decision compute cost.
+
+\subsection{Properties}
+\label{sec:design:properties}
+
+\paragraph{No training, no learned components.}
+The keyword inventory is the only domain-specific component and is edited
+by hand. AgentRoute requires no offline training data and has no learned
+parameters. This contrasts with MasRouter~\citep{yue2025masrouter},
+which trains a cascaded controller, and with methods such as
+RopMura~\citep{wang2025ropmura} and RCR-Router~\citep{liu2025rcrrouter}
+that rely on dataset-tuned prompts or learned embeddings for their
+internal routing decisions.
+
+\paragraph{Constant routing cost in agent-pool size.}
+The routing-decision cost is $O(|\mathcal{D}| \cdot \max_d |K_d|)$ for the
+pattern scan, plus $O(1)$ amortised for the cache lookup, plus
+$O(|\mathcal{A}_d|)$ for the within-domain least-loaded selection where
+$\mathcal{A}_d$ is the set of agents registered to the chosen domain. None
+of these depend on the total number of registered agents $N$ when the
+domain decomposition is held fixed. In contrast, learned controllers and
+topology-rebuilding methods score over or embed the candidate agent set,
+producing routing cost that grows with $N$.
+
+\paragraph{Auditable decision trace.}
+Every routing decision is a deterministic function of $(q, K, \tau, \text{cache state})$
+and can be replayed offline without re-invoking an LLM. This matters for
+deployments in regulated settings, where the routing layer must be
+explainable and reproducible from logs alone.
+
+\paragraph{Trade-off: limited expressiveness.}
+The deterministic pattern matcher cannot perform multi-hop decomposition
+or recover from a miscalibrated keyword inventory. On benchmarks where
+multi-call routers achieve higher accuracy through iterative
+decomposition---knowledge-intensive multi-hop question answering, in
+particular---AgentRoute will accept a lower accuracy in exchange for the
+cost and scalability properties above. We quantify this trade-off
+empirically in Sections~\ref{sec:benchmarks} and~\ref{sec:scalability}.
+
+\bibliography{references}
+
+\end{document}
