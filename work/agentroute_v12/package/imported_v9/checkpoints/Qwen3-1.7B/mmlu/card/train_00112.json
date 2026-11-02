@@ -1,0 +1,415 @@
+{
+  "id": "mmlu/dev/276",
+  "split": "train",
+  "iteration": 28,
+  "status": "ok",
+  "quality": 0.0,
+  "format_ok": true,
+  "prediction": "B",
+  "final_text": "Several peer reports indicate that paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature. \n\nFINAL: B",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 268,
+      "completion_tokens": 105,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1650257299,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-e623d16092944941ad627253b1409606",
+      "system_fingerprint": null,
+      "response_text": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also **icosahedral** in shape. \n\nThe statement \"Fragile viruses often visualised with RNA spewing from the inside\" is not a characteristic of paramyxoviruses. This description is more consistent with **retroviruses** or **rhabdoviruses**, not paramyxoviruses.\n\nFINAL: B",
+      "wall_s": 1.003432944999986
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 268,
+      "completion_tokens": 106,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 725816680,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7841d68b6fea46d9a0c9274ec83ee783",
+      "system_fingerprint": null,
+      "response_text": "Paramyxoviruses are a family of viruses characterized by their morphology. They are typically **elongate** and have an **envelope**. They are also **icosahedral** in shape. \n\nThe statement \"Fragile viruses often visualised with RNA spewing from the inside\" is not a standard morphological characteristic of paramyxoviruses. This description is more consistent with **retroviruses** or **rhabdoviruses**, not paramyxoviruses.\n\nFINAL: B",
+      "wall_s": 1.0263621949998196
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 415,
+      "completion_tokens": 75,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 396915081,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also **icosahedral** in shape. \\n\\nThe statement \\\"Fragile viruses often visualised with RNA spewing from the inside\\\" is not a characteristic of paramyxoviruses. This description is more consistent with **retroviruses** or **rhabdoviruses**, not paramyxoviruses.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-59624ea47c63473cbc7e9b652b0507bd",
+      "system_fingerprint": null,
+      "response_text": "The paramyxoviruses are characterized by their **elongate** shape, **icosahedral** structure, and **envelope**. The statement about fragile viruses with RNA spewing from the inside is not a characteristic of paramyxoviruses and is more associated with other viral families like retroviruses or rhabdoviruses.\n\nFINAL: B",
+      "wall_s": 0.8063306400001693
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 383,
+      "completion_tokens": 75,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 716743330,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"v2Pf\", \"role\": \"Verifier\", \"text\": \"The paramyxoviruses are characterized by their **elongate** shape, **icosahedral** structure, and **envelope**. The statement about fragile viruses with RNA spewing from the inside is not a characteristic of paramyxoviruses and is more associated with other viral families like retroviruses or rhabdoviruses.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-81457f447ce4488fb452cadee0190084",
+      "system_fingerprint": null,
+      "response_text": "The paramyxoviruses are known for their **elongate** shape, **icosahedral** structure, and **envelope**. The statement about fragile viruses with RNA spewing from the inside is not a characteristic of paramyxoviruses and is more associated with other viral families like retroviruses or rhabdoviruses.\n\nFINAL: B",
+      "wall_s": 0.8258673079999426
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 268,
+      "completion_tokens": 57,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 712239839,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-0a6b70f385594c0f97c8ed65e8150516",
+      "system_fingerprint": null,
+      "response_text": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \n\nThe correct answer is:  \nFINAL: B",
+      "wall_s": 0.6815431570000783
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 366,
+      "completion_tokens": 44,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1925008297,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \\n\\nThe correct answer is:  \\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-2095ad4c90be45ea9a79d98121d35506",
+      "system_fingerprint": null,
+      "response_text": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B",
+      "wall_s": 0.6025048930000594
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 353,
+      "completion_tokens": 44,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 760144513,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"mUkc\", \"role\": \"Analyst\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-b2d6568fe6d14b84977fecdf69fd51ee",
+      "system_fingerprint": null,
+      "response_text": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B",
+      "wall_s": 0.5983984869999404
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 440,
+      "completion_tokens": 44,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 941370324,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \\n\\nThe correct answer is:  \\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"v2Pf\", \"role\": \"Verifier\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-3065d41b605a4ae2ac6c98a4ded56fa7",
+      "system_fingerprint": null,
+      "response_text": "The paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature.\n\nFINAL: B",
+      "wall_s": 0.6115219769999385
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 585,
+      "completion_tokens": 49,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 318262849,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"mUkc\", \"role\": \"Analyst\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \\n\\nThe correct answer is:  \\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"v2Pf\", \"role\": \"Verifier\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"zfwi\", \"role\": \"Critic\", \"text\": \"The paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-1a1f930abb7f46b7bb32d4c29e37a404",
+      "system_fingerprint": null,
+      "response_text": "Several peer reports indicate that paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature. \n\nFINAL: B",
+      "wall_s": 0.6293796519998978
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also **icosahedral** in shape. \n\nThe statement \"Fragile viruses often visualised with RNA spewing from the inside\" is not a characteristic of paramyxoviruses. This description is more consistent with **retroviruses** or **rhabdoviruses**, not paramyxoviruses.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Paramyxoviruses are a family of viruses characterized by their morphology. They are typically **elongate** and have an **envelope**. They are also **icosahedral** in shape. \n\nThe statement \"Fragile viruses often visualised with RNA spewing from the inside\" is not a standard morphological characteristic of paramyxoviruses. This description is more consistent with **retroviruses** or **rhabdoviruses**, not paramyxoviruses.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also **icosahedral** in shape. \\n\\nThe statement \\\"Fragile viruses often visualised with RNA spewing from the inside\\\" is not a characteristic of paramyxoviruses. This description is more consistent with **retroviruses** or **rhabdoviruses**, not paramyxoviruses.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The paramyxoviruses are characterized by their **elongate** shape, **icosahedral** structure, and **envelope**. The statement about fragile viruses with RNA spewing from the inside is not a characteristic of paramyxoviruses and is more associated with other viral families like retroviruses or rhabdoviruses.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"v2Pf\", \"role\": \"Verifier\", \"text\": \"The paramyxoviruses are characterized by their **elongate** shape, **icosahedral** structure, and **envelope**. The statement about fragile viruses with RNA spewing from the inside is not a characteristic of paramyxoviruses and is more associated with other viral families like retroviruses or rhabdoviruses.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The paramyxoviruses are known for their **elongate** shape, **icosahedral** structure, and **envelope**. The statement about fragile viruses with RNA spewing from the inside is not a characteristic of paramyxoviruses and is more associated with other viral families like retroviruses or rhabdoviruses.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \n\nThe correct answer is:  \nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \\n\\nThe correct answer is:  \\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"mUkc\", \"role\": \"Analyst\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \\n\\nThe correct answer is:  \\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"v2Pf\", \"role\": \"Verifier\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature.\n\nFINAL: B"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is a morphological characteristic of the paramyxoviruses.\nA. Fragile viruses often visualised with RNA spewing from the inside\nB. Elongate viruses\nC. Icosahedral viruses with envelope\nD. Very large viruses\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"mUkc\", \"role\": \"Analyst\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"AAWs\", \"role\": \"Independent solver\", \"text\": \"Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \\n\\nThe correct answer is:  \\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"v2Pf\", \"role\": \"Verifier\", \"text\": \"The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"zfwi\", \"role\": \"Critic\", \"text\": \"The paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Several peer reports indicate that paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature. \n\nFINAL: B"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "AAWs",
+      "recipient": "v2Pf",
+      "kind": "peer",
+      "text": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also **icosahedral** in shape. \n\nThe statement \"Fragile viruses often visualised with RNA spewing from the inside\" is not a characteristic of paramyxoviruses. This description is more consistent with **retroviruses** or **rhabdoviruses**, not paramyxoviruses.\n\nFINAL: B",
+      "payload_tokens": 104,
+      "payload_bytes": 425
+    },
+    {
+      "sender": "v2Pf",
+      "recipient": "mUkc",
+      "kind": "peer",
+      "text": "The paramyxoviruses are characterized by their **elongate** shape, **icosahedral** structure, and **envelope**. The statement about fragile viruses with RNA spewing from the inside is not a characteristic of paramyxoviruses and is more associated with other viral families like retroviruses or rhabdoviruses.\n\nFINAL: B",
+      "payload_tokens": 74,
+      "payload_bytes": 318
+    },
+    {
+      "sender": "AAWs",
+      "recipient": "mUkc",
+      "kind": "peer",
+      "text": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \n\nThe correct answer is:  \nFINAL: B",
+      "payload_tokens": 56,
+      "payload_bytes": 238
+    },
+    {
+      "sender": "mUkc",
+      "recipient": "v2Pf",
+      "kind": "peer",
+      "text": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B",
+      "payload_tokens": 43,
+      "payload_bytes": 190
+    },
+    {
+      "sender": "AAWs",
+      "recipient": "zfwi",
+      "kind": "peer",
+      "text": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \n\nThe correct answer is:  \nFINAL: B",
+      "payload_tokens": 56,
+      "payload_bytes": 238
+    },
+    {
+      "sender": "v2Pf",
+      "recipient": "zfwi",
+      "kind": "peer",
+      "text": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B",
+      "payload_tokens": 43,
+      "payload_bytes": 190
+    },
+    {
+      "sender": "mUkc",
+      "recipient": "S4RM",
+      "kind": "aggregate",
+      "text": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B",
+      "payload_tokens": 43,
+      "payload_bytes": 190
+    },
+    {
+      "sender": "AAWs",
+      "recipient": "S4RM",
+      "kind": "aggregate",
+      "text": "Paramyxoviruses are a family of viruses characterized by their morphology and structure. They are typically **elongate** and have an **envelope**. They are also known for having **icosahedral capsids**. \n\nThe correct answer is:  \nFINAL: B",
+      "payload_tokens": 56,
+      "payload_bytes": 238
+    },
+    {
+      "sender": "v2Pf",
+      "recipient": "S4RM",
+      "kind": "aggregate",
+      "text": "The paramyxoviruses are known for their elongate shape, presence of an envelope, and icosahedral capsid structure. These characteristics are well-documented in virology literature.\n\nFINAL: B",
+      "payload_tokens": 43,
+      "payload_bytes": 190
+    },
+    {
+      "sender": "zfwi",
+      "recipient": "S4RM",
+      "kind": "aggregate",
+      "text": "The paramyxoviruses are characterized by their elongate shape, presence of an envelope, and icosahedral capsid structure. These features are well-documented in virology literature.\n\nFINAL: B",
+      "payload_tokens": 43,
+      "payload_bytes": 190
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.009953040000027613
+    }
+  ],
+  "embedding_wall_s": 0.009953040000027613,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 3945,
+  "peer_messages": 6,
+  "peer_payload_tokens": 376,
+  "peer_payload_bytes": 1599,
+  "all_logical_deliveries": 10,
+  "all_delivered_payload_tokens": 561,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

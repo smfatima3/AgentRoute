@@ -1,0 +1,434 @@
+{
+  "id": "mmlu/dev/7",
+  "split": "train",
+  "iteration": 14,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "C",
+  "final_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 251,
+      "completion_tokens": 80,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1588094831,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-719cd3824a184d8f81d248047c44d011",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "wall_s": 0.8806485000000066
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 373,
+      "completion_tokens": 80,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1911138858,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-95cb7e44773b4dde868cf8d8aec1d608",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "wall_s": 0.8669023810000454
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 374,
+      "completion_tokens": 80,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1971227075,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-e887a0da99ba4371ac1b092f74dd92b2",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "wall_s": 0.8447762250000324
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 481,
+      "completion_tokens": 80,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 873163164,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-beb798c4a67c4380b9e5a52071aa48d8",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "wall_s": 0.8426109189999806
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 251,
+      "completion_tokens": 94,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1016378640,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-cabdb8c8a62346d991aed95d2611bd86",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\n\nFINAL: C",
+      "wall_s": 0.9270288899999741
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 387,
+      "completion_tokens": 83,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 561308026,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-43f0e2cc868c4656a1589543d75fdbc1",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "wall_s": 0.8399294860000737
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 387,
+      "completion_tokens": 83,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1104285032,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-1787e76a55d04aa5b889574643e876b6",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "wall_s": 0.8342014750000999
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 612,
+      "completion_tokens": 83,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 873468612,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f5095b7e85554064b75143e5998f39c2",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "wall_s": 0.9063521569999011
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 723,
+      "completion_tokens": 83,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1477917443,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-5f412adc0747401e85374fb5a2e0a3ae",
+      "system_fingerprint": null,
+      "response_text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "wall_s": 0.9340681090000089
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe pleura\nA. have no sensory innervation.\nB. are separated by a 2 mm space.\nC. extend into the neck.\nD. are composed of respiratory epithelium.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "YSwX",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "payload_tokens": 79,
+      "payload_bytes": 337
+    },
+    {
+      "sender": "4S82",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "payload_tokens": 79,
+      "payload_bytes": 337
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "payload_tokens": 79,
+      "payload_bytes": 337
+    },
+    {
+      "sender": "urJN",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is separated by a 2 mm space called the pleural space, and it extends into the neck. However, the pleura does have sensory innervation. \n\nFINAL: C",
+      "payload_tokens": 79,
+      "payload_bytes": 337
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\n\nFINAL: C",
+      "payload_tokens": 93,
+      "payload_bytes": 411
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\n\nFINAL: C",
+      "payload_tokens": 93,
+      "payload_bytes": 411
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\n\nFINAL: C",
+      "payload_tokens": 93,
+      "payload_bytes": 411
+    },
+    {
+      "sender": "4S82",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "payload_tokens": 82,
+      "payload_bytes": 353
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "payload_tokens": 82,
+      "payload_bytes": 353
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium; instead, it is composed of a thin layer of connective tissue. The pleura is not separated by a 2 mm space; this is a common misconception. The pleura extends into the neck, but this is not a defining characteristic. The pleura does have sensory innervation, so option A is incorrect.\n\nFINAL: C",
+      "payload_tokens": 93,
+      "payload_bytes": 411
+    },
+    {
+      "sender": "4S82",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "payload_tokens": 82,
+      "payload_bytes": 353
+    },
+    {
+      "sender": "urJN",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "payload_tokens": 82,
+      "payload_bytes": 353
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The pleura is a double-layered membrane that lines the thoracic cavity. It is not composed of respiratory epithelium (option D is incorrect). The pleura is not separated by a 2 mm space (option B is incorrect). The pleura does not extend into the neck (option C is incorrect). The pleura does have sensory innervation (option A is incorrect). \n\nFINAL: C",
+      "payload_tokens": 82,
+      "payload_bytes": 353
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [],
+  "embedding_wall_s": 0,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4585,
+  "peer_messages": 9,
+  "peer_payload_tokens": 759,
+  "peer_payload_bytes": 3287,
+  "all_logical_deliveries": 13,
+  "all_delivered_payload_tokens": 1098,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

@@ -1,0 +1,423 @@
+{
+  "id": "mmlu/dev/45",
+  "split": "train",
+  "iteration": 16,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "A",
+  "final_text": "All peer reports agree that glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. The other options are either incorrect or not relevant to glucose transport. \n\nFINAL: A",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 258,
+      "completion_tokens": 84,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1690205332,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-1e2ebc94310c47358e58d5ade7552391",
+      "system_fingerprint": null,
+      "response_text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A",
+      "wall_s": 0.9154705969999668
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 382,
+      "completion_tokens": 65,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 138976763,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f083c9c1c1ef4b2dab19bf117f6ea49c",
+      "system_fingerprint": null,
+      "response_text": "The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "wall_s": 0.7452277069999127
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 364,
+      "completion_tokens": 65,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 695563924,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"8NJp\", \"role\": \"Critic\", \"text\": \"The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-c23dcab620984b739edd3d77bcadb298",
+      "system_fingerprint": null,
+      "response_text": "The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "wall_s": 0.7540582970000287
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 474,
+      "completion_tokens": 65,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 643251937,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"Gmg7\", \"role\": \"Verifier\", \"text\": \"The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-622810ad59c4444b8d895cb391567341",
+      "system_fingerprint": null,
+      "response_text": "The glucose transport into muscle cells is facilitated by protein transporters called GLUT4, which are activated in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "wall_s": 0.7402509999999438
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 257,
+      "completion_tokens": 76,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1283003730,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d43094496259451f9d769a32cb0cd3e5",
+      "system_fingerprint": null,
+      "response_text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \n\nFINAL: A",
+      "wall_s": 0.8101447440000129
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 258,
+      "completion_tokens": 84,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1983893284,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-441515105e694b1d8a9ad1fdfdf0c1fb",
+      "system_fingerprint": null,
+      "response_text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A",
+      "wall_s": 0.8978404770000452
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 382,
+      "completion_tokens": 62,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 645465207,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-71fb81dfdf7645e889b3bffa8f95aacf",
+      "system_fingerprint": null,
+      "response_text": "The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "wall_s": 0.7178234730000668
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 465,
+      "completion_tokens": 66,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2066606938,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YgLB\", \"role\": \"Analyst\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"Gmg7\", \"role\": \"Verifier\", \"text\": \"The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-beaab16016c742378af67274d2eb7549",
+      "system_fingerprint": null,
+      "response_text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "wall_s": 0.7334791359999144
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 672,
+      "completion_tokens": 48,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 237165411,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YgLB\", \"role\": \"Analyst\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"Gmg7\", \"role\": \"Verifier\", \"text\": \"The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"8NJp\", \"role\": \"Critic\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-af1e85a9d58b492887c5bc6801766856",
+      "system_fingerprint": null,
+      "response_text": "All peer reports agree that glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. The other options are either incorrect or not relevant to glucose transport. \n\nFINAL: A",
+      "wall_s": 0.6249576300000399
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"8NJp\", \"role\": \"Critic\", \"text\": \"The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"Gmg7\", \"role\": \"Verifier\", \"text\": \"The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The glucose transport into muscle cells is facilitated by protein transporters called GLUT4, which are activated in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YgLB\", \"role\": \"Analyst\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"Gmg7\", \"role\": \"Verifier\", \"text\": \"The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nGlucose is transported into the muscle cell:\nA. via protein transporters called GLUT4.\nB. only in the presence of insulin.\nC. via hexokinase.\nD. via monocarbylic acid transporters.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YgLB\", \"role\": \"Analyst\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"GBLV\", \"role\": \"Independent solver\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"Gmg7\", \"role\": \"Verifier\", \"text\": \"The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"8NJp\", \"role\": \"Critic\", \"text\": \"Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "All peer reports agree that glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. The other options are either incorrect or not relevant to glucose transport. \n\nFINAL: A"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "GBLV",
+      "recipient": "8NJp",
+      "kind": "peer",
+      "text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A",
+      "payload_tokens": 83,
+      "payload_bytes": 396
+    },
+    {
+      "sender": "8NJp",
+      "recipient": "Gmg7",
+      "kind": "peer",
+      "text": "The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "payload_tokens": 64,
+      "payload_bytes": 308
+    },
+    {
+      "sender": "GBLV",
+      "recipient": "YgLB",
+      "kind": "peer",
+      "text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A",
+      "payload_tokens": 83,
+      "payload_bytes": 396
+    },
+    {
+      "sender": "Gmg7",
+      "recipient": "YgLB",
+      "kind": "peer",
+      "text": "The correct answer is A. GLUT4 protein transporters are responsible for transporting glucose into muscle cells in response to insulin signals. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "payload_tokens": 64,
+      "payload_bytes": 308
+    },
+    {
+      "sender": "GBLV",
+      "recipient": "Gmg7",
+      "kind": "peer",
+      "text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A",
+      "payload_tokens": 83,
+      "payload_bytes": 396
+    },
+    {
+      "sender": "YgLB",
+      "recipient": "8NJp",
+      "kind": "peer",
+      "text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \n\nFINAL: A",
+      "payload_tokens": 75,
+      "payload_bytes": 358
+    },
+    {
+      "sender": "Gmg7",
+      "recipient": "8NJp",
+      "kind": "peer",
+      "text": "The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "payload_tokens": 61,
+      "payload_bytes": 285
+    },
+    {
+      "sender": "YgLB",
+      "recipient": "eKDd",
+      "kind": "aggregate",
+      "text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarbylic acid transporters are not relevant to glucose transport. \n\nFINAL: A",
+      "payload_tokens": 75,
+      "payload_bytes": 358
+    },
+    {
+      "sender": "GBLV",
+      "recipient": "eKDd",
+      "kind": "aggregate",
+      "text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin signals. Hexokinase is an enzyme that catalyzes the first step of glycolysis, but it is not responsible for transporting glucose into the cell. Monocarboxylic acid transporters are involved in the transport of certain amino acids, not glucose. \n\nFINAL: A",
+      "payload_tokens": 83,
+      "payload_bytes": 396
+    },
+    {
+      "sender": "Gmg7",
+      "recipient": "eKDd",
+      "kind": "aggregate",
+      "text": "The glucose transporter in muscle cells that facilitates the uptake of glucose is GLUT4, which is regulated by insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "payload_tokens": 61,
+      "payload_bytes": 285
+    },
+    {
+      "sender": "8NJp",
+      "recipient": "eKDd",
+      "kind": "aggregate",
+      "text": "Glucose is transported into muscle cells via protein transporters called GLUT4, which facilitate the uptake of glucose in response to insulin. Hexokinase is an enzyme involved in glycolysis, not glucose transport. Monocarboxylic acid transporters are involved in amino acid transport, not glucose. \n\nFINAL: A",
+      "payload_tokens": 65,
+      "payload_bytes": 308
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.009865697000009277
+    }
+  ],
+  "embedding_wall_s": 0.009865697000009277,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4127,
+  "peer_messages": 7,
+  "peer_payload_tokens": 513,
+  "peer_payload_bytes": 2447,
+  "all_logical_deliveries": 11,
+  "all_delivered_payload_tokens": 797,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

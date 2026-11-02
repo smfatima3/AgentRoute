@@ -1,0 +1,423 @@
+{
+  "id": "mmlu/dev/6",
+  "split": "train",
+  "iteration": 0,
+  "status": "ok",
+  "quality": 0.0,
+  "format_ok": true,
+  "prediction": "C",
+  "final_text": "All peer reports agree that the mental nerve (C) is the motor branch of the trigeminal nerve and carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 256,
+      "completion_tokens": 97,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1614245940,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-af271bc41c424a0ab1999195349711ac",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "wall_s": 1.0059562729999811
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 396,
+      "completion_tokens": 88,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2144578895,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"hUu7\", \"role\": \"Analyst\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9125f65cf3084a0d82efdc0a3c83c0d0",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, specifically the ramus of the trigeminal nerve, carries somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "wall_s": 0.9296274019999942
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 396,
+      "completion_tokens": 79,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 709724539,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"hUu7\", \"role\": \"Analyst\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-efdf8e189e59455a896703690d82bd38",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, called the ramus, contains somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "wall_s": 0.9042891220000229
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 495,
+      "completion_tokens": 82,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 379826671,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"n7z9\", \"role\": \"Independent solver\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch, specifically the ramus of the trigeminal nerve, carries somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch, called the ramus, contains somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-46b23eb9ad6a448a950cf7c39159a1d2",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, called the ramus, contains somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "wall_s": 0.8426295889999551
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 257,
+      "completion_tokens": 64,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 130085420,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-dbfe9bdb1f5d4a10ba414ad56aecc655",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (V3). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C",
+      "wall_s": 0.7109163549999948
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 257,
+      "completion_tokens": 63,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 6766382,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-fdea04ab062741fa8be320b717249005",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C",
+      "wall_s": 0.7027926150000212
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 361,
+      "completion_tokens": 50,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1711701194,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-e868777ca7344277a3d9c45eb643ef22",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C",
+      "wall_s": 0.7148194819999958
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 440,
+      "completion_tokens": 50,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 411539863,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"n7z9\", \"role\": \"Independent solver\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-953681d3f82649418a4fd4ed4af9a92d",
+      "system_fingerprint": null,
+      "response_text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C",
+      "wall_s": 0.6656749599999898
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 613,
+      "completion_tokens": 46,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1057471153,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"hUu7\", \"role\": \"Analyst\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"n7z9\", \"role\": \"Independent solver\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"nBJQ\", \"role\": \"Verifier\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (V3). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9db7275c6d6a4085ad220c94328f56b2",
+      "system_fingerprint": null,
+      "response_text": "All peer reports agree that the mental nerve (C) is the motor branch of the trigeminal nerve and carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C",
+      "wall_s": 0.61486653999998
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"hUu7\", \"role\": \"Analyst\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, specifically the ramus of the trigeminal nerve, carries somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"hUu7\", \"role\": \"Analyst\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, called the ramus, contains somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"n7z9\", \"role\": \"Independent solver\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch, specifically the ramus of the trigeminal nerve, carries somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch, called the ramus, contains somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, called the ramus, contains somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (V3). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"n7z9\", \"role\": \"Independent solver\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of these branches of the trigeminal nerve contain somatic motor processes?\nA. The supraorbital nerve\nB. The infraorbital nerve\nC. The mental nerve\nD. None of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"hUu7\", \"role\": \"Analyst\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"n7z9\", \"role\": \"Independent solver\", \"text\": \"The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"nBJQ\", \"role\": \"Verifier\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (V3). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"ux34\", \"role\": \"Critic\", \"text\": \"The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "All peer reports agree that the mental nerve (C) is the motor branch of the trigeminal nerve and carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "hUu7",
+      "recipient": "n7z9",
+      "kind": "peer",
+      "text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "payload_tokens": 96,
+      "payload_bytes": 419
+    },
+    {
+      "sender": "hUu7",
+      "recipient": "ux34",
+      "kind": "peer",
+      "text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, specifically the ramus of the trigeminal nerve. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "payload_tokens": 96,
+      "payload_bytes": 419
+    },
+    {
+      "sender": "n7z9",
+      "recipient": "nBJQ",
+      "kind": "peer",
+      "text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, specifically the ramus of the trigeminal nerve, carries somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches, not motor. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "payload_tokens": 87,
+      "payload_bytes": 372
+    },
+    {
+      "sender": "ux34",
+      "recipient": "nBJQ",
+      "kind": "peer",
+      "text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch, called the ramus, contains somatic motor processes. The infraorbital nerve (B) and the mental nerve (C) are sensory branches. The supraorbital nerve (A) is also a sensory branch. Therefore, none of the options contain somatic motor processes.\n\nFINAL: D",
+      "payload_tokens": 78,
+      "payload_bytes": 332
+    },
+    {
+      "sender": "ux34",
+      "recipient": "n7z9",
+      "kind": "peer",
+      "text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C",
+      "payload_tokens": 62,
+      "payload_bytes": 275
+    },
+    {
+      "sender": "n7z9",
+      "recipient": "hUu7",
+      "kind": "peer",
+      "text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C",
+      "payload_tokens": 49,
+      "payload_bytes": 216
+    },
+    {
+      "sender": "ux34",
+      "recipient": "hUu7",
+      "kind": "peer",
+      "text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C",
+      "payload_tokens": 62,
+      "payload_bytes": 275
+    },
+    {
+      "sender": "hUu7",
+      "recipient": "qyaz",
+      "kind": "aggregate",
+      "text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C",
+      "payload_tokens": 49,
+      "payload_bytes": 216
+    },
+    {
+      "sender": "n7z9",
+      "recipient": "qyaz",
+      "kind": "aggregate",
+      "text": "The trigeminal nerve (V) has both sensory and motor branches. The motor branch is the mental nerve (C), which carries somatic motor processes. The supraorbital and infraorbital nerves are sensory branches. \n\nFINAL: C",
+      "payload_tokens": 49,
+      "payload_bytes": 216
+    },
+    {
+      "sender": "nBJQ",
+      "recipient": "qyaz",
+      "kind": "aggregate",
+      "text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (V3). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C",
+      "payload_tokens": 63,
+      "payload_bytes": 276
+    },
+    {
+      "sender": "ux34",
+      "recipient": "qyaz",
+      "kind": "aggregate",
+      "text": "The trigeminal nerve (V) is responsible for sensation and motor functions. The somatic motor processes of the trigeminal nerve are carried by the motor branch, which is the mental nerve (C). The supraorbital and infraorbital nerves are sensory branches, not motor. \n\nFINAL: C",
+      "payload_tokens": 62,
+      "payload_bytes": 275
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.009484710000037921
+    }
+  ],
+  "embedding_wall_s": 0.009484710000037921,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4090,
+  "peer_messages": 7,
+  "peer_payload_tokens": 530,
+  "peer_payload_bytes": 2308,
+  "all_logical_deliveries": 11,
+  "all_delivered_payload_tokens": 753,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

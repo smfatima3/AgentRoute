@@ -1,0 +1,143 @@
+{
+  "model": {
+    "Qwen/Qwen3-1.7B": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "sentence-transformers/all-MiniLM-L6-v2": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "BAAI/bge-large-en-v1.5": "d4aa6901d3a41ba39fb536a557fa166f842b0e09"
+  },
+  "source_lock_sha256": "47645d45efc7a912526019b36f5978c8f2df63bb38fa8262c2ceea83a74ffb55",
+  "split_manifest_sha256": "b505fc87139382b56a80009a5bd7a0bc426630d6a065052babdc9ac58afa3ad0",
+  "stage_inventory": {
+    "early_unanimity_stop": "mapped to route_fixed; no duplicate stage task",
+    "same_answer_suppression": "mapped to toggle_filter; no duplicate stage task",
+    "answer_grouping": "remove_answer_grouping: retain every distinct sender after dissent filtering",
+    "representative_ranking": "remove_representative_rank: first candidate in original sender order per answer group, instead of evidence/length ranking",
+    "global_vote_summary": "remove_vote_summary: remove prior answer-summary delivery and prompt addition; peer reports retained",
+    "recipient_cap": "k=N-1 in executed source; cap removal is identical and adds no distinct setting",
+    "payload_truncation": "unset in executed source; no active stage to remove",
+    "candidate_scoring": "answer_key parsing/ranking only; no embeddings or paid router in AgentRoute; profiler records actual stage functions",
+    "local_selector": "aggregation_controls plus fixed routing/dense controls form required 2x2",
+    "random_fixed_note": "Frozen old random_fixed k=3 equals N-1 at N=4; all candidates survive; report this degeneracy rather than claim sparse random advantage",
+    "source": "package/agentroute/evidence_policy.py"
+  },
+  "policy_selection": "No new policy selection; preserve original development candidate and historical MMLU evidence",
+  "inference": {
+    "gpu": "L40S",
+    "replicas": 2,
+    "queries_per_replica": 2,
+    "agents": 4,
+    "rounds_max_controlled": 2,
+    "max_tokens_per_call": 2048,
+    "temperature": 0.2,
+    "thinking": false,
+    "prefix_cache": false,
+    "dtype": "bfloat16",
+    "max_model_len": 32768,
+    "vllm": "0.8.5",
+    "engine": "V1",
+    "torch_cpu_threads": 4,
+    "torch_interop_threads": 1
+  },
+  "scheduling": {
+    "shard_size": 10,
+    "method_block_rotation": "MMLU completion first, other main panels second, then controls; hash(seed=20261031,bucket) within tier; two independent query slots per device",
+    "timed_fit_overlap": false
+  },
+  "fitting": {
+    "recipe": {
+      "iterations": 30,
+      "batch_size": 4,
+      "lr": 0.1,
+      "seed": 11
+    },
+    "source_dataset": "mmlu",
+    "source_questions": 120,
+    "reuse": "exact compatible checkpoint and all 120 training records plus 30 iterations validated"
+  },
+  "selforg": {
+    "main": "published efficient consensus variant as implemented in pinned source: min >= .95 and range <= .1",
+    "alternate": "same source with consensus early termination disabled; original fixed-round variant; common-task adaptation, not native-paper reproduction",
+    "reference": "https://arxiv.org/html/2510.00685v2#A5"
+  },
+  "self_consistency": {
+    "token_budgets": {
+      "math": 8987,
+      "mmlu": 3108,
+      "svamp": 8987,
+      "bbh": 3108
+    },
+    "derivation": "ceil mean original AgentRoute development total tokens: MATH8986.05, BBH3107.3. MMLU uses BBH discrete-answer budget; SVAMP uses math budget. No test outcomes used.",
+    "selection": "local plurality of admissible answer keys, earliest sample tie break",
+    "reservation": "exact chat-template prompt + 2048 output before each independent sample"
+  },
+  "transport": {
+    "host_runtime": "vm",
+    "regions": [
+      "us-east",
+      "us-west"
+    ],
+    "shape_target_mbit_s": 10,
+    "extra_one_way_delay_ms": 25,
+    "bandwidth_tolerance_fraction": 0.15,
+    "rtt_delta_tolerance_ms": 15,
+    "rate_calibration": "dense ramps at 1,4,12,32,64,128 qps, 8s steady+2s warm; first >5% failure/drop; low=max(.25,high/4). If bracket not found report saturation unlocated.",
+    "rates_freeze": "separate immutable network calibration before any transport comparison; no quality-dependent calibration",
+    "steady_duration": "max(60,ceil(1000/rate))",
+    "warmup_s": 10,
+    "deadline_s": 30,
+    "slo_s": 5,
+    "query_concurrency_cap": 32,
+    "delivery_threads": 128,
+    "repetitions": 3,
+    "seed": 20261031,
+    "live_anchor_slo_s": 60,
+    "live_anchor_selection": "first 10 fixed math development IDs, independent of outcomes"
+  },
+  "statistics": {
+    "primary": "MMLU seed17, equal fixed-panel stratum weights as existing manifest",
+    "other_panels": "exploratory selected panels",
+    "bootstrap": 10000,
+    "unit": "paired question; seeds clustered by question",
+    "tests": "Wilson accuracy; conservative paired gain-harm CI; exact McNemar and Holm7 per dataset; stratified paired token-ratio bootstrap",
+    "noninferiority_margin": 0.02,
+    "margin_status": "inherited screening threshold, not validated application acceptance criterion; never widen",
+    "optional_stopping": false
+  },
+  "persistence": {
+    "controller_location": "Modal CPU sandbox; single-writer SQLite on its mounted Volume, not shared across writers",
+    "no_codex_automation": true,
+    "status_interval_s": 300,
+    "verified_result_export_interval_s": 1200,
+    "commit": "v2 sync after closed task records; provider readback SHA before acceptance; coordinator syncs /workspace after checkpoint",
+    "failed_attempts": "retained with usage and immutable journals"
+  },
+  "budget": {
+    "user_reported_remaining_credit_usd": 30,
+    "execution_ceiling_usd": 28,
+    "safety_reserve_usd": 2,
+    "no_paid_spillover": true,
+    "concurrency_limit_gpu": 2,
+    "automatic_infra_attempts": 3
+  },
+  "measurement_contract": {
+    "families": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "old_telemetry": "reuse only measured fields; per-request server waits and per-stage details missing in v11 remain missing until separately measured",
+    "physical_bytes": "packet capture on isolated transport NIC; HTTP body not a wire-byte substitute",
+    "timing": "profiler overhead included, old and new timing cohorts separate",
+    "required_measurement_supplements": "new MMLU telemetry on fixed ablation subset for methods with historical-only records; cannot substitute old quality outcome/latency"
+  }
+}

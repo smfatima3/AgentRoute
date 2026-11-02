@@ -1,0 +1,423 @@
+{
+  "id": "mmlu/dev/8",
+  "split": "train",
+  "iteration": 28,
+  "status": "ok",
+  "quality": 0.0,
+  "format_ok": true,
+  "prediction": "B",
+  "final_text": "The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 273,
+      "completion_tokens": 77,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1307513909,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-ddc0653d44844da486f2799a9252cf01",
+      "system_fingerprint": null,
+      "response_text": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B",
+      "wall_s": 0.867475309999918
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 273,
+      "completion_tokens": 86,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 787148587,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9ead184fbda24fb3bde6138ede6c343b",
+      "system_fingerprint": null,
+      "response_text": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly reduced overjet, and there is no excess overbite of the upper lateral incisors. \n\nFINAL: B",
+      "wall_s": 0.9087166780000189
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 390,
+      "completion_tokens": 82,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1114640987,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-669b4c256075484bb543d311ea22b062",
+      "system_fingerprint": null,
+      "response_text": "The peer report indicates that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B",
+      "wall_s": 0.8416613269998834
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 397,
+      "completion_tokens": 82,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2053480302,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"The peer report indicates that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-4154cd65c6404461ab184920b626462f",
+      "system_fingerprint": null,
+      "response_text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B",
+      "wall_s": 0.8412001879999025
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 272,
+      "completion_tokens": 88,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 799633086,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-c05e3cea101244feb8c5078ad9d05f1f",
+      "system_fingerprint": null,
+      "response_text": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "wall_s": 0.9234752390000267
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 403,
+      "completion_tokens": 94,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1226569432,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-05d566e0b5eb469ca104257d5e7c2785",
+      "system_fingerprint": null,
+      "response_text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "wall_s": 0.9575071350000144
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 408,
+      "completion_tokens": 94,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1094775144,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-6e4aa2bb30024366bedc860349f400a2",
+      "system_fingerprint": null,
+      "response_text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "wall_s": 0.9480327280000438
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 649,
+      "completion_tokens": 95,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1060048203,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"d9fq\", \"role\": \"Critic\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-70a955c1105449cc83334d0ae7e38018",
+      "system_fingerprint": null,
+      "response_text": "The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "wall_s": 0.958643051000081
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 772,
+      "completion_tokens": 95,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2047258016,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"Zggy\", \"role\": \"Verifier\", \"text\": \"The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"d9fq\", \"role\": \"Critic\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9b19d95a8f974f11b9f0bb956bfac413",
+      "system_fingerprint": null,
+      "response_text": "The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "wall_s": 0.9745922130000508
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly reduced overjet, and there is no excess overbite of the upper lateral incisors. \n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report indicates that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"The peer report indicates that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"d9fq\", \"role\": \"Critic\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nIn Angle's Class II Div 2 occlusion there is\nA. excess overbite of the upper lateral incisors.\nB. negative overjet of the upper central incisors.\nC. excess overjet of the upper lateral incisors.\nD. excess overjet of the upper central incisors.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"74eM\", \"role\": \"Analyst\", \"text\": \"In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"Mzsk\", \"role\": \"Independent solver\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"Zggy\", \"role\": \"Verifier\", \"text\": \"The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"d9fq\", \"role\": \"Critic\", \"text\": \"The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "Mzsk",
+      "recipient": "74eM",
+      "kind": "peer",
+      "text": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B",
+      "payload_tokens": 76,
+      "payload_bytes": 348
+    },
+    {
+      "sender": "74eM",
+      "recipient": "d9fq",
+      "kind": "peer",
+      "text": "The peer report indicates that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors, resulting in a negative overjet. The upper lateral incisors are not typically affected in this configuration.\n\nFINAL: B",
+      "payload_tokens": 81,
+      "payload_bytes": 379
+    },
+    {
+      "sender": "74eM",
+      "recipient": "Mzsk",
+      "kind": "peer",
+      "text": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 87,
+      "payload_bytes": 384
+    },
+    {
+      "sender": "Mzsk",
+      "recipient": "d9fq",
+      "kind": "peer",
+      "text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 93,
+      "payload_bytes": 422
+    },
+    {
+      "sender": "74eM",
+      "recipient": "Zggy",
+      "kind": "peer",
+      "text": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 87,
+      "payload_bytes": 384
+    },
+    {
+      "sender": "Mzsk",
+      "recipient": "Zggy",
+      "kind": "peer",
+      "text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 93,
+      "payload_bytes": 422
+    },
+    {
+      "sender": "d9fq",
+      "recipient": "Zggy",
+      "kind": "peer",
+      "text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 93,
+      "payload_bytes": 422
+    },
+    {
+      "sender": "74eM",
+      "recipient": "NZHr",
+      "kind": "aggregate",
+      "text": "In Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible. This leads to a negative overjet of the upper central incisors, as the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 87,
+      "payload_bytes": 384
+    },
+    {
+      "sender": "Mzsk",
+      "recipient": "NZHr",
+      "kind": "aggregate",
+      "text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 93,
+      "payload_bytes": 422
+    },
+    {
+      "sender": "Zggy",
+      "recipient": "NZHr",
+      "kind": "aggregate",
+      "text": "The peer reports consistently state that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 94,
+      "payload_bytes": 435
+    },
+    {
+      "sender": "d9fq",
+      "recipient": "NZHr",
+      "kind": "aggregate",
+      "text": "The peer report states that in Angle's Class II Div 2 occlusion, the maxilla is retrognathic relative to the mandible, leading to a negative overjet of the upper central incisors. This is because the upper incisors are positioned behind the lower incisors. The upper lateral incisors typically have a normal or slightly positive overjet, but in this occlusion, the upper central incisors have a negative overjet.\n\nFINAL: B",
+      "payload_tokens": 93,
+      "payload_bytes": 422
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.011121643999786102
+    }
+  ],
+  "embedding_wall_s": 0.011121643999786102,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4630,
+  "peer_messages": 7,
+  "peer_payload_tokens": 610,
+  "peer_payload_bytes": 2761,
+  "all_logical_deliveries": 11,
+  "all_delivered_payload_tokens": 977,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

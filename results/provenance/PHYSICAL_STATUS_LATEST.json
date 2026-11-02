@@ -1,0 +1,362 @@
+{
+  "observed_unix_s": 1793597535.5415306,
+  "PHYSICAL_TRANSPORT_LATEST.json": {
+    "path": "/__modal/volumes/vo-NsdkViNGo9sFQRqZ0sHMBM/outputs/agentroute_v12_completion/runs/20261102T013801Z/physical_transport",
+    "report": {
+      "status": "INCOMPLETE_RESOURCE_CAP",
+      "accepted_repetitions": 0,
+      "evidence_class": "physical_payload_replay",
+      "gpu_allocated": false,
+      "next_task": "transport_scaling-dense-0d4de0fa3e7c70802fe4",
+      "finished_unix_s": 1793584040.5583978,
+      "cost_estimate_usd": 27.195358531279936,
+      "all_transport_workers_stopped": true
+    }
+  },
+  "checkpoints/LATEST.json": {
+    "created_unix_s": 1793584039.127684,
+    "path": "/__modal/volumes/vo-NsdkViNGo9sFQRqZ0sHMBM/outputs/agentroute_v12_completion/checkpoints/20261102T014647Z-1",
+    "archive": "/__modal/volumes/vo-NsdkViNGo9sFQRqZ0sHMBM/outputs/agentroute_v12_completion/checkpoints/20261102T014647Z-1.zip",
+    "sha256": "b1ffd0f3b5bdc42877669ac40b93b4bfc25e8adcafd793261b0ff9b3a65a72b1",
+    "verified_files": 45,
+    "contains_actual_remote_results": true
+  },
+  "SHAPING_VALIDATION.json": {
+    "passed": true,
+    "rtt_delta_ms": 50.640347750001254,
+    "measurements": {
+      "ordinary": {
+        "rtt_s": [
+          0.06412393399999994,
+          0.06382553300000016,
+          0.06381471299999975,
+          0.06385222300000004,
+          0.06368388299999994,
+          0.06379342399999999,
+          0.0640874130000002,
+          0.06395743300000012,
+          0.06382573299999983,
+          0.06387789399999999,
+          0.06399193300000006,
+          0.06395061299999982,
+          0.06390749299999987,
+          0.06451478399999999,
+          0.06392511299999981,
+          0.06386499399999934,
+          0.06381675300000023,
+          0.06438546299999981,
+          0.06454000400000037,
+          0.06407298400000006,
+          0.06404895300000035,
+          0.06486239400000038,
+          0.06385665300000021,
+          0.0641098840000005,
+          0.0639787630000006,
+          0.06394409299999992,
+          0.06402655399999979,
+          0.064074733,
+          0.06390944300000001,
+          0.0648817140000002
+        ],
+        "rtt_median_s": 0.06395402299999997,
+        "bulk": [
+          {
+            "wall_s": 0.6444170570000001,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          },
+          {
+            "wall_s": 0.20367086899999975,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          },
+          {
+            "wall_s": 0.20129387799999954,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          }
+        ],
+        "upload_mbit_s_median": 329.49662526357696,
+        "note": "Round-trip and upload measured on caller monotonic clock. One-way delay is validated by paired RTT increment, not unsynchronized host clocks."
+      },
+      "constrained": {
+        "rtt_s": [
+          0.1401550469999986,
+          0.1401085670000004,
+          0.11492419499999862,
+          0.11486363600000082,
+          0.11497965600000093,
+          0.11484133499999949,
+          0.1147631459999996,
+          0.11497556600000003,
+          0.11491927600000018,
+          0.11496005500000095,
+          0.11498858599999906,
+          0.1149535359999998,
+          0.11558736599999975,
+          0.11493458599999862,
+          0.11490406599999936,
+          0.11495669500000005,
+          0.11494455599999931,
+          0.1147116360000009,
+          0.1401056859999983,
+          0.16533869800000112,
+          0.11495305600000094,
+          0.11495132599999991,
+          0.1150274859999989,
+          0.11495960500000102,
+          0.14016990700000065,
+          0.11488276599999914,
+          0.11488523599999922,
+          0.11486991500000165,
+          0.11489236599999941,
+          0.1147385959999987
+        ],
+        "rtt_median_s": 0.11495219100000043,
+        "bulk": [
+          {
+            "wall_s": 7.363375953999999,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          },
+          {
+            "wall_s": 7.151431087999999,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          },
+          {
+            "wall_s": 7.154117079999995,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          }
+        ],
+        "upload_mbit_s_median": 9.38045369534266,
+        "note": "Round-trip and upload measured on caller monotonic clock. One-way delay is validated by paired RTT increment, not unsynchronized host clocks."
+      },
+      "ordinary_after": {
+        "rtt_s": [
+          0.06448962400000369,
+          0.06463392300000237,
+          0.06445426400000542,
+          0.06452192399999745,
+          0.06470274399999454,
+          0.06451097400000094,
+          0.0652311240000003,
+          0.06465219400000422,
+          0.06470494399999893,
+          0.0651313540000018,
+          0.06459532400000256,
+          0.06505613399999532,
+          0.06470753400000007,
+          0.06467514399999885,
+          0.0646185740000007,
+          0.06467463299999565,
+          0.06465909399999958,
+          0.0645135740000029,
+          0.06447376400000593,
+          0.06542264400000164,
+          0.06466469400000108,
+          0.06473048400000181,
+          0.06472918400000083,
+          0.06519872400000537,
+          0.06473868399999816,
+          0.0648028339999982,
+          0.06458096400000102,
+          0.06463891399999966,
+          0.06462108400000233,
+          0.06468488400000183
+        ],
+        "rtt_median_s": 0.06466966349999836,
+        "bulk": [
+          {
+            "wall_s": 0.650853062000003,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          },
+          {
+            "wall_s": 0.20363651999999632,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          },
+          {
+            "wall_s": 0.20297629899999947,
+            "request_body_bytes": 8388608,
+            "response_body_bytes": 137,
+            "sha256": "f38469a7ac373e721e1591bbf5755647f669ddc76042d713b1047435368eae7b"
+          }
+        ],
+        "upload_mbit_s_median": 329.55220409384924,
+        "note": "Round-trip and upload measured on caller monotonic clock. One-way delay is validated by paired RTT increment, not unsynchronized host clocks."
+      }
+    },
+    "required_bandwidth_mbit_s": [
+      8.5,
+      11.5
+    ],
+    "required_added_round_trip_ms": [
+      35,
+      65
+    ]
+  },
+  "HOSTS.json": {
+    "nodes": [
+      {
+        "region": "us-east",
+        "boot_id": "fca268ee-2013-4e6f-a702-719d9979939d\n",
+        "kernel": "7.2.14",
+        "sandbox_id": "sb-01M6CYJDEAX4V09S1MNJPZR28B"
+      },
+      {
+        "region": "us-west",
+        "boot_id": "8e81f98e-5490-4eba-bc37-00e7dbd647c4\n",
+        "kernel": "7.2.14",
+        "sandbox_id": "sb-01M6CYJDEAF0P002EPYH79B73A"
+      }
+    ],
+    "host_separation_evidence": "Provider-reported distinct geographical regions; boot IDs alone are not physical-host proof."
+  },
+  "REPORT.json": {
+    "status": "INCOMPLETE_RESOURCE_CAP",
+    "accepted_repetitions": 0,
+    "evidence_class": "physical_payload_replay",
+    "gpu_allocated": false,
+    "next_task": "transport_scaling-dense-0d4de0fa3e7c70802fe4",
+    "finished_unix_s": 1793584040.5583978,
+    "cost_estimate_usd": 27.195358531279936,
+    "all_transport_workers_stopped": true
+  },
+  "counts": [
+    {
+      "group_name": "aggregation_controls",
+      "state": "accepted",
+      "count": 40
+    },
+    {
+      "group_name": "aggregation_controls",
+      "state": "cancelled_by_user",
+      "count": 40
+    },
+    {
+      "group_name": "baseline_fitting",
+      "state": "accepted",
+      "count": 3
+    },
+    {
+      "group_name": "component_ablations",
+      "state": "accepted",
+      "count": 80
+    },
+    {
+      "group_name": "component_ablations",
+      "state": "cancelled_by_user",
+      "count": 80
+    },
+    {
+      "group_name": "development",
+      "state": "accepted",
+      "count": 120
+    },
+    {
+      "group_name": "live_anchors",
+      "state": "cancelled_by_user",
+      "count": 40
+    },
+    {
+      "group_name": "main_mmlu",
+      "state": "accepted",
+      "count": 800
+    },
+    {
+      "group_name": "seed_sensitivity",
+      "state": "accepted",
+      "count": 120
+    },
+    {
+      "group_name": "seed_sensitivity",
+      "state": "cancelled_by_user",
+      "count": 120
+    },
+    {
+      "group_name": "self_consistency",
+      "state": "accepted",
+      "count": 20
+    },
+    {
+      "group_name": "self_consistency",
+      "state": "cancelled_by_user",
+      "count": 20
+    },
+    {
+      "group_name": "selforg_variant",
+      "state": "accepted",
+      "count": 20
+    },
+    {
+      "group_name": "selforg_variant",
+      "state": "cancelled_by_user",
+      "count": 20
+    },
+    {
+      "group_name": "short_bbh",
+      "state": "accepted",
+      "count": 400
+    },
+    {
+      "group_name": "short_math",
+      "state": "accepted",
+      "count": 7
+    },
+    {
+      "group_name": "short_math",
+      "state": "cancelled_by_user",
+      "count": 393
+    },
+    {
+      "group_name": "stage_ablations",
+      "state": "accepted",
+      "count": 64
+    },
+    {
+      "group_name": "stage_ablations",
+      "state": "cancelled_by_user",
+      "count": 56
+    },
+    {
+      "group_name": "transfer_svamp",
+      "state": "cancelled_by_user",
+      "count": 480
+    },
+    {
+      "group_name": "transport_anchors",
+      "state": "pending",
+      "count": 18
+    },
+    {
+      "group_name": "transport_scaling",
+      "state": "pending",
+      "count": 72
+    }
+  ],
+  "resources": [
+    {
+      "id": "sb-01M6CYFXKKN8GNRTR6MYVX0AJ9",
+      "role": "coordinator",
+      "state": "running",
+      "owned": true,
+      "created_unix_s": 1793583461.0243483,
+      "timeout_s": 3646,
+      "rate_usd_per_hour": 0.1899,
+      "provider_exit_code_now": 0
+    }
+  ],
+  "coordinator_id": "sb-01M6CYFXKKN8GNRTR6MYVX0AJ9",
+  "coordinator_exit_code": 0
+}

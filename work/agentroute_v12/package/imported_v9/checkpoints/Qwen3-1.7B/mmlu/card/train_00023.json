@@ -1,0 +1,423 @@
+{
+  "id": "mmlu/dev/116",
+  "split": "train",
+  "iteration": 5,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "D",
+  "final_text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 269,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1112278706,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-b63441179d6d4a688e4f56c5e7f36f46",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.6417809490000081
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 357,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1416671501,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GPaw\", \"role\": \"Analyst\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-2ecfce7527d5414e907e8b78c9ca7be3",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.6392008880000049
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 356,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1281015228,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AdXP\", \"role\": \"Verifier\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-92ce2ff2a9fc4b66ad810eb7580707d3",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.6142967270000099
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 508,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 830078388,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GPaw\", \"role\": \"Analyst\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"cKzG\", \"role\": \"Independent solver\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"AdXP\", \"role\": \"Verifier\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7a713a0eb4a04ea6b8f5ee8e78eb35f8",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.630667399999993
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 269,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2089637536,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-04e6dd82395242b69d61e0c3a5423cde",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.6140717590000122
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 270,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 596828863,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a32508b7ea1440a88b60e16d2549cdf4",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.627192134999973
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 359,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1572604086,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"yDyB\", \"role\": \"Critic\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-c9f6b3cd08884303a0527e8af24901cd",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.6520045869999649
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 359,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1217505906,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"cKzG\", \"role\": \"Independent solver\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-224a72de076a452caf5c0c1a97abd5cc",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.6220786630000248
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 585,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1338482070,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GPaw\", \"role\": \"Analyst\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"cKzG\", \"role\": \"Independent solver\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"AdXP\", \"role\": \"Verifier\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"yDyB\", \"role\": \"Critic\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-53e6befc29bc454895652f98908b2b78",
+      "system_fingerprint": null,
+      "response_text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "wall_s": 0.6466315570000916
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GPaw\", \"role\": \"Analyst\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AdXP\", \"role\": \"Verifier\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GPaw\", \"role\": \"Analyst\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"cKzG\", \"role\": \"Independent solver\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"AdXP\", \"role\": \"Verifier\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"yDyB\", \"role\": \"Critic\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"cKzG\", \"role\": \"Independent solver\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nThe term \"budget deficit\" refers to the\nA. annual increase in federal spending on the military\nB. amount of interest on the national debt\nC. difference between the initial budget proposals made by the president and Congress\nD. amount the government spends in excess of its revenues\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"GPaw\", \"role\": \"Analyst\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"cKzG\", \"role\": \"Independent solver\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"AdXP\", \"role\": \"Verifier\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"yDyB\", \"role\": \"Critic\", \"text\": \"The term \\\"budget deficit\\\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "GPaw",
+      "recipient": "AdXP",
+      "kind": "peer",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 241
+    },
+    {
+      "sender": "AdXP",
+      "recipient": "cKzG",
+      "kind": "peer",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 241
+    },
+    {
+      "sender": "GPaw",
+      "recipient": "yDyB",
+      "kind": "peer",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 241
+    },
+    {
+      "sender": "cKzG",
+      "recipient": "yDyB",
+      "kind": "peer",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 241
+    },
+    {
+      "sender": "AdXP",
+      "recipient": "yDyB",
+      "kind": "peer",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total expenditures and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 241
+    },
+    {
+      "sender": "yDyB",
+      "recipient": "cKzG",
+      "kind": "peer",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 237
+    },
+    {
+      "sender": "cKzG",
+      "recipient": "AdXP",
+      "kind": "peer",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 237
+    },
+    {
+      "sender": "GPaw",
+      "recipient": "LMkN",
+      "kind": "aggregate",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 237
+    },
+    {
+      "sender": "cKzG",
+      "recipient": "LMkN",
+      "kind": "aggregate",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 237
+    },
+    {
+      "sender": "AdXP",
+      "recipient": "LMkN",
+      "kind": "aggregate",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 237
+    },
+    {
+      "sender": "yDyB",
+      "recipient": "LMkN",
+      "kind": "aggregate",
+      "text": "The term \"budget deficit\" refers to the difference between the government's total spending and its total revenues over a given period, typically a fiscal year. This is the amount the government spends in excess of its revenues.\n\nFINAL: D",
+      "payload_tokens": 46,
+      "payload_bytes": 237
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.010654768999984299
+    }
+  ],
+  "embedding_wall_s": 0.010654768999984299,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 3755,
+  "peer_messages": 7,
+  "peer_payload_tokens": 322,
+  "peer_payload_bytes": 1679,
+  "all_logical_deliveries": 11,
+  "all_delivered_payload_tokens": 506,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

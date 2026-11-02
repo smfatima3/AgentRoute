@@ -1,0 +1,434 @@
+{
+  "id": "mmlu/dev/202",
+  "split": "train",
+  "iteration": 10,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "A",
+  "final_text": "The question asks about a gene showing codominance. Codominance is a type of inheritance where both alleles of a gene are fully expressed in the heterozygote. This is distinct from complete dominance, where one allele masks the other. \n\nPeer reports consistently state that codominance results in both alleles being expressed in the heterozygote, with neither being dominant over the other. This aligns with the definition of codominance.\n\nFINAL: A",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 266,
+      "completion_tokens": 43,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1225621143,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-ee353384a2b04f76876cf2204de9ed65",
+      "system_fingerprint": null,
+      "response_text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "wall_s": 0.634975304000136
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 350,
+      "completion_tokens": 50,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 955243853,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-3dc742d61bc148b0a29009ac79f801d6",
+      "system_fingerprint": null,
+      "response_text": "The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "wall_s": 0.6968899190001139
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 430,
+      "completion_tokens": 43,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1159333023,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-03a35d25686741fc8cdbf7a049a094ff",
+      "system_fingerprint": null,
+      "response_text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "wall_s": 0.6192722319999575
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 428,
+      "completion_tokens": 50,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1909396935,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a568bc7fccfb453f854e1300e9871161",
+      "system_fingerprint": null,
+      "response_text": "The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "wall_s": 0.705839049000133
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 265,
+      "completion_tokens": 41,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 872472789,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7d11ee168a5d45d7989737078f694930",
+      "system_fingerprint": null,
+      "response_text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "wall_s": 0.5728500549998898
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 348,
+      "completion_tokens": 39,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 62268855,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d9b74f97f2d04b0fb02fce9f10bc9c7a",
+      "system_fingerprint": null,
+      "response_text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "wall_s": 0.5633454129999791
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 416,
+      "completion_tokens": 39,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1036949285,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-6a1bf2d05372401ca3b647205eb51604",
+      "system_fingerprint": null,
+      "response_text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "wall_s": 0.5565808880000986
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 345,
+      "completion_tokens": 39,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1708540181,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a9854e87b6874e60a812188a1790e359",
+      "system_fingerprint": null,
+      "response_text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "wall_s": 0.5615839219999543
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 552,
+      "completion_tokens": 94,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1176507063,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-af32af03977c45019c4f6d45e8e9ea9c",
+      "system_fingerprint": null,
+      "response_text": "The question asks about a gene showing codominance. Codominance is a type of inheritance where both alleles of a gene are fully expressed in the heterozygote. This is distinct from complete dominance, where one allele masks the other. \n\nPeer reports consistently state that codominance results in both alleles being expressed in the heterozygote, with neither being dominant over the other. This aligns with the definition of codominance.\n\nFINAL: A",
+      "wall_s": 0.9451792859999841
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA gene showing codominance\nA. has both alleles independently expressed in the heterozygote\nB. has one allele dominant to the other\nC. has alleles tightly linked on the same chromosome\nD. has alleles expressed at the same time in development\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The question asks about a gene showing codominance. Codominance is a type of inheritance where both alleles of a gene are fully expressed in the heterozygote. This is distinct from complete dominance, where one allele masks the other. \n\nPeer reports consistently state that codominance results in both alleles being expressed in the heterozygote, with neither being dominant over the other. This aligns with the definition of codominance.\n\nFINAL: A"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "4S82",
+      "recipient": "YSwX",
+      "kind": "peer",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "payload_tokens": 42,
+      "payload_bytes": 198
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "payload_tokens": 49,
+      "payload_bytes": 232
+    },
+    {
+      "sender": "4S82",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "payload_tokens": 42,
+      "payload_bytes": 198
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The correct answer is A. A gene showing codominance results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "payload_tokens": 49,
+      "payload_bytes": 232
+    },
+    {
+      "sender": "urJN",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are visible in the phenotype. \n\nFINAL: A",
+      "payload_tokens": 42,
+      "payload_bytes": 198
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 40,
+      "payload_bytes": 189
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 40,
+      "payload_bytes": 189
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 38,
+      "payload_bytes": 176
+    },
+    {
+      "sender": "urJN",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 38,
+      "payload_bytes": 176
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote. This is because neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 40,
+      "payload_bytes": 189
+    },
+    {
+      "sender": "4S82",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 38,
+      "payload_bytes": 176
+    },
+    {
+      "sender": "urJN",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 38,
+      "payload_bytes": 176
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "A codominant gene results in both alleles being expressed in the heterozygote, as neither allele is completely dominant over the other, and both are fully expressed. \n\nFINAL: A",
+      "payload_tokens": 38,
+      "payload_bytes": 176
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [],
+  "embedding_wall_s": 0,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 3838,
+  "peer_messages": 9,
+  "peer_payload_tokens": 380,
+  "peer_payload_bytes": 1788,
+  "all_logical_deliveries": 13,
+  "all_delivered_payload_tokens": 534,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

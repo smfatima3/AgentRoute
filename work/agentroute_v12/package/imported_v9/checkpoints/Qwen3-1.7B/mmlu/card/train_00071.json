@@ -1,0 +1,415 @@
+{
+  "id": "mmlu/dev/74",
+  "split": "train",
+  "iteration": 17,
+  "status": "ok",
+  "quality": 0.0,
+  "format_ok": true,
+  "prediction": "D",
+  "final_text": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information. \n\nFINAL: D",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 302,
+      "completion_tokens": 161,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 535752941,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f872cad0186e4f24b602dc3703989ed0",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole.\n\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 1.3599592220000432
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 505,
+      "completion_tokens": 112,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 326713632,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"7VZM\", \"role\": \"Verifier\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole.\\n\\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-1735375dc7934240b92bf26c59fb41ca",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 1.0526253409999526
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 456,
+      "completion_tokens": 103,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 287567036,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"WwP7\", \"role\": \"Analyst\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7a9e38e2c2944653be3242f4c4d63c4d",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is directly proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. This means the second pole is 1.5 times stronger than the first pole. However, the problem does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 0.9937728029999562
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 446,
+      "completion_tokens": 103,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1335343942,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"rMyt\", \"role\": \"Independent solver\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. This means the second pole is 1.5 times stronger than the first pole. However, the problem does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-ed8b13e882f548018aa5007db3c1a63f",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is directly proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. This means the second pole is 1.5 times stronger than the first pole. However, the problem does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 1.0484456030000047
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 301,
+      "completion_tokens": 162,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1814789014,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-b5d00077b02c46f7a390a9136f6e8d87",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\n\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 1.4658343720000175
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 508,
+      "completion_tokens": 130,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 459109764,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"WwP7\", \"role\": \"Analyst\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\\n\\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-611aee614f694940a8ab04cb499b1751",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 1.1642831430000342
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 473,
+      "completion_tokens": 58,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 696775482,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"rMyt\", \"role\": \"Independent solver\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-18861eca25c949d4a6eb64a91572aa22",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 0.6754812920000859
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 402,
+      "completion_tokens": 58,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 688048684,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Hw99\", \"role\": \"Critic\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-17fafd97ed3747169d21a4dfde282461",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "wall_s": 0.6755396490000294
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 842,
+      "completion_tokens": 59,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1827819195,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"WwP7\", \"role\": \"Analyst\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\\n\\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"rMyt\", \"role\": \"Independent solver\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"7VZM\", \"role\": \"Verifier\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Hw99\", \"role\": \"Critic\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a435f96089b74c96b08267be47d27b03",
+      "system_fingerprint": null,
+      "response_text": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information. \n\nFINAL: D",
+      "wall_s": 0.6898933380000472
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole.\n\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"7VZM\", \"role\": \"Verifier\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole.\\n\\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"WwP7\", \"role\": \"Analyst\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is directly proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. This means the second pole is 1.5 times stronger than the first pole. However, the problem does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"rMyt\", \"role\": \"Independent solver\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. This means the second pole is 1.5 times stronger than the first pole. However, the problem does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is directly proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. This means the second pole is 1.5 times stronger than the first pole. However, the problem does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\n\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"WwP7\", \"role\": \"Analyst\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\\n\\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"rMyt\", \"role\": \"Independent solver\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Hw99\", \"role\": \"Critic\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\nA. 15 N.\nB. 20 N.\nC. 7.5 N.\nD. 3.75 N.\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"WwP7\", \"role\": \"Analyst\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\\n\\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"rMyt\", \"role\": \"Independent solver\", \"text\": \"The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"7VZM\", \"role\": \"Verifier\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Hw99\", \"role\": \"Critic\", \"text\": \"The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information. \n\nFINAL: D"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "7VZM",
+      "recipient": "WwP7",
+      "kind": "peer",
+      "text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole.\n\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 160,
+      "payload_bytes": 633
+    },
+    {
+      "sender": "WwP7",
+      "recipient": "rMyt",
+      "kind": "peer",
+      "text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 111,
+      "payload_bytes": 432
+    },
+    {
+      "sender": "rMyt",
+      "recipient": "Hw99",
+      "kind": "peer",
+      "text": "The force on a point pole is directly proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. This means the second pole is 1.5 times stronger than the first pole. However, the problem does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 102,
+      "payload_bytes": 401
+    },
+    {
+      "sender": "WwP7",
+      "recipient": "rMyt",
+      "kind": "peer",
+      "text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\n\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 161,
+      "payload_bytes": 638
+    },
+    {
+      "sender": "rMyt",
+      "recipient": "Hw99",
+      "kind": "peer",
+      "text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 129,
+      "payload_bytes": 504
+    },
+    {
+      "sender": "Hw99",
+      "recipient": "7VZM",
+      "kind": "peer",
+      "text": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 57,
+      "payload_bytes": 268
+    },
+    {
+      "sender": "WwP7",
+      "recipient": "WXcR",
+      "kind": "aggregate",
+      "text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The force is directly proportional to the strength, so the force on the second pole will be 1.5 times the force on the first pole.\n\nThe force on the first pole is not given, but the question asks for the force on the second pole. Since the strength is 1.5 times, the force is 1.5 times the force on the first pole. However, the question does not provide the force on the first pole, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 161,
+      "payload_bytes": 638
+    },
+    {
+      "sender": "rMyt",
+      "recipient": "WXcR",
+      "kind": "aggregate",
+      "text": "The force on a point pole is proportional to its strength. The strength of the first pole is 4π * 10^-4 weber, and the second pole has a strength of 4π * 1.5 * 10^-4 weber. The strength of the second pole is 1.5 times that of the first pole. Since the force is directly proportional to the strength, the force on the second pole is 1.5 times the force on the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 129,
+      "payload_bytes": 504
+    },
+    {
+      "sender": "7VZM",
+      "recipient": "WXcR",
+      "kind": "aggregate",
+      "text": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 57,
+      "payload_bytes": 268
+    },
+    {
+      "sender": "Hw99",
+      "recipient": "WXcR",
+      "kind": "aggregate",
+      "text": "The force on a point pole is directly proportional to its strength. The strength of the second pole is 1.5 times that of the first pole. However, the force on the first pole is not given, so we cannot calculate the exact force without additional information.\n\nFINAL: D",
+      "payload_tokens": 57,
+      "payload_bytes": 268
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.011587446000021373
+    }
+  ],
+  "embedding_wall_s": 0.011587446000021373,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 5181,
+  "peer_messages": 6,
+  "peer_payload_tokens": 720,
+  "peer_payload_bytes": 2876,
+  "all_logical_deliveries": 10,
+  "all_delivered_payload_tokens": 1124,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

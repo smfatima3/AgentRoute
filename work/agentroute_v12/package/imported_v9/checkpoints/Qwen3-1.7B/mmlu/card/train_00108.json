@@ -1,0 +1,431 @@
+{
+  "id": "mmlu/dev/259",
+  "split": "train",
+  "iteration": 27,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "D",
+  "final_text": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). This is supported by multiple peer reports indicating that the WWF is the organization behind the campaign.\n\nFINAL: D",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 244,
+      "completion_tokens": 20,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 784641361,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-e4c4d81d56e2434fb7376c1efffc9b20",
+      "system_fingerprint": null,
+      "response_text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "wall_s": 0.42614616900004876
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 304,
+      "completion_tokens": 62,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1571281920,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"H3Ak\", \"role\": \"Independent solver\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-4a1f42c2d2fb491abb4eb28455992a28",
+      "system_fingerprint": null,
+      "response_text": "Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\n\nFINAL: D",
+      "wall_s": 0.7188721449999775
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 347,
+      "completion_tokens": 32,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 918134710,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d0d4c201be514afc8ec8fba5003e0dac",
+      "system_fingerprint": null,
+      "response_text": "The peer report states that Earth Hour was launched by the World Wildlife Fund (WWF). This is a direct statement from the analyst. \n\nFINAL: D",
+      "wall_s": 0.5153927819999353
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 407,
+      "completion_tokens": 32,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 839364515,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"YtsH\", \"role\": \"Verifier\", \"text\": \"The peer report states that Earth Hour was launched by the World Wildlife Fund (WWF). This is a direct statement from the analyst. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a144baff34e849a6a907e0709ad48edf",
+      "system_fingerprint": null,
+      "response_text": "The peer reports indicate that Earth Hour was launched by the World Wildlife Fund (WWF). This is a direct statement from the analyst. \n\nFINAL: D",
+      "wall_s": 0.5166351070001838
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 244,
+      "completion_tokens": 20,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1784637982,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-8bcd57e3eeca468f9a21772fdd354c96",
+      "system_fingerprint": null,
+      "response_text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "wall_s": 0.4324300599998878
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 305,
+      "completion_tokens": 20,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 665594812,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-4b50a31db1104a9eb425862692cd6b3c",
+      "system_fingerprint": null,
+      "response_text": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "wall_s": 0.42848729000002095
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 306,
+      "completion_tokens": 20,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 822753355,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9c8f1ddefe084f1d9fd4036fd1a57f42",
+      "system_fingerprint": null,
+      "response_text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "wall_s": 0.42897584299998925
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 355,
+      "completion_tokens": 20,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1126414865,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-4e60c2c54c7d4f21abd6749975ddbb2e",
+      "system_fingerprint": null,
+      "response_text": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "wall_s": 0.4285445620000701
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 452,
+      "completion_tokens": 38,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1966418832,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"H3Ak\", \"role\": \"Independent solver\", \"text\": \"The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"YtsH\", \"role\": \"Verifier\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-0fda163c0a7a4ada9ab7e348c3456099",
+      "system_fingerprint": null,
+      "response_text": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). This is supported by multiple peer reports indicating that the WWF is the organization behind the campaign.\n\nFINAL: D",
+      "wall_s": 0.5613076739998633
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"H3Ak\", \"role\": \"Independent solver\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report states that Earth Hour was launched by the World Wildlife Fund (WWF). This is a direct statement from the analyst. \n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"YtsH\", \"role\": \"Verifier\", \"text\": \"The peer report states that Earth Hour was launched by the World Wildlife Fund (WWF). This is a direct statement from the analyst. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports indicate that Earth Hour was launched by the World Wildlife Fund (WWF). This is a direct statement from the analyst. \n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \n\nFINAL: D"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nEarth Hour was a campaign launched by which organization?\nA. Greenpeace\nB. The UN\nC. Oxfam\nD. World Wildlife Fund\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"2jqQ\", \"role\": \"Analyst\", \"text\": \"The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"H3Ak\", \"role\": \"Independent solver\", \"text\": \"The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"YtsH\", \"role\": \"Verifier\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Vq7k\", \"role\": \"Critic\", \"text\": \"Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). This is supported by multiple peer reports indicating that the WWF is the organization behind the campaign.\n\nFINAL: D"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "H3Ak",
+      "recipient": "2jqQ",
+      "kind": "peer",
+      "text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 79
+    },
+    {
+      "sender": "2jqQ",
+      "recipient": "YtsH",
+      "kind": "peer",
+      "text": "Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\n\nFINAL: D",
+      "payload_tokens": 61,
+      "payload_bytes": 330
+    },
+    {
+      "sender": "2jqQ",
+      "recipient": "Vq7k",
+      "kind": "peer",
+      "text": "Earth Hour is a global initiative aimed at raising awareness about energy conservation and environmental sustainability. It was launched by the World Wildlife Fund (WWF) in 2007. The WWF is a leading international organization dedicated to preserving nature and ensuring that future generations inherit a healthy planet.\n\nFINAL: D",
+      "payload_tokens": 61,
+      "payload_bytes": 330
+    },
+    {
+      "sender": "YtsH",
+      "recipient": "Vq7k",
+      "kind": "peer",
+      "text": "The peer report states that Earth Hour was launched by the World Wildlife Fund (WWF). This is a direct statement from the analyst. \n\nFINAL: D",
+      "payload_tokens": 31,
+      "payload_bytes": 141
+    },
+    {
+      "sender": "Vq7k",
+      "recipient": "2jqQ",
+      "kind": "peer",
+      "text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 79
+    },
+    {
+      "sender": "Vq7k",
+      "recipient": "YtsH",
+      "kind": "peer",
+      "text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 79
+    },
+    {
+      "sender": "2jqQ",
+      "recipient": "H3Ak",
+      "kind": "peer",
+      "text": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 81
+    },
+    {
+      "sender": "Vq7k",
+      "recipient": "H3Ak",
+      "kind": "peer",
+      "text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 79
+    },
+    {
+      "sender": "2jqQ",
+      "recipient": "3Mc2",
+      "kind": "aggregate",
+      "text": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 81
+    },
+    {
+      "sender": "H3Ak",
+      "recipient": "3Mc2",
+      "kind": "aggregate",
+      "text": "The Earth Hour campaign was launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 81
+    },
+    {
+      "sender": "YtsH",
+      "recipient": "3Mc2",
+      "kind": "aggregate",
+      "text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 79
+    },
+    {
+      "sender": "Vq7k",
+      "recipient": "3Mc2",
+      "kind": "aggregate",
+      "text": "Earth Hour was a campaign launched by the World Wildlife Fund (WWF). \n\nFINAL: D",
+      "payload_tokens": 19,
+      "payload_bytes": 79
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.009214364999934332
+    }
+  ],
+  "embedding_wall_s": 0.009214364999934332,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 3228,
+  "peer_messages": 8,
+  "peer_payload_tokens": 248,
+  "peer_payload_bytes": 1198,
+  "all_logical_deliveries": 12,
+  "all_delivered_payload_tokens": 324,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

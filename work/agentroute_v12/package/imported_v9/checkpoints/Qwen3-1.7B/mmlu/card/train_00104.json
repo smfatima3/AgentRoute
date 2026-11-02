@@ -1,0 +1,415 @@
+{
+  "id": "mmlu/dev/235",
+  "split": "train",
+  "iteration": 26,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "D",
+  "final_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n- Proceeds from sale of investments: This is part of investing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 336,
+      "completion_tokens": 116,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 147910153,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d3969ec2d5de4f489855bef002573155",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\n- Proceeds from sale of investments: This is part of investing activities, not financing.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 1.0812547919999815
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 337,
+      "completion_tokens": 80,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 414466935,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-5328937e12e0443081afb7673a9b1cda",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 0.8601983089999976
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 466,
+      "completion_tokens": 80,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 296488355,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4kUf\", \"role\": \"Critic\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\nProceeds from long-term debt: $100,000  \\nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7eb9d1a56f3340f487093b1e8a6bc3ff",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 0.8422487459999957
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 466,
+      "completion_tokens": 80,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1776819808,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\nProceeds from long-term debt: $100,000  \\nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a93c0e821bf244d89f2d16930f460dae",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 0.8322541160000583
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 336,
+      "completion_tokens": 117,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1128926856,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-3ca8220c56a24da08ef43b50f947e3cc",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 1.1053896009998425
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 337,
+      "completion_tokens": 92,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 590053192,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-0a3bc1632a04494d9812400048a3b930",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000  \n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 0.9738632600001438
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 478,
+      "completion_tokens": 81,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 986134617,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000  \\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-dfc6f53da4e243a7a6d7ce722bcbdfe0",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 0.8626887660000193
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 744,
+      "completion_tokens": 99,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1300024936,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"6SQk\", \"role\": \"Analyst\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\\n\\nThus, the amount reported as net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000  \\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4kUf\", \"role\": \"Critic\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-104c7c90469346e0958d6fe811e72ab8",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n- Proceeds from sale of investments: This is part of investing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 0.9797488460001205
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 877,
+      "completion_tokens": 99,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1060669668,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"6SQk\", \"role\": \"Analyst\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\\n\\nThus, the amount reported as net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000  \\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"bqzT\", \"role\": \"Verifier\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\\n- Proceeds from sale of investments: This is part of investing activities.\\n\\nThus, the amount reported as net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4kUf\", \"role\": \"Critic\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-8ed408fa5f9c4068ae8e58d34fe26509",
+      "system_fingerprint": null,
+      "response_text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n- Proceeds from sale of investments: This is part of investing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "wall_s": 0.9903886290001083
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\n- Proceeds from sale of investments: This is part of investing activities, not financing.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4kUf\", \"role\": \"Critic\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\nProceeds from long-term debt: $100,000  \\nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\nProceeds from long-term debt: $100,000  \\nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000  \n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000  \\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"6SQk\", \"role\": \"Analyst\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\\n\\nThus, the amount reported as net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000  \\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4kUf\", \"role\": \"Critic\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n- Proceeds from sale of investments: This is part of investing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nBox a nongovernmental not-for-profit organization had the following transactions during the year: Proceeds from sale of investments $80000 Purchase of property plant and equipment $10000 Proceeds from long-term debt $100000 Loss on sale of investment $5000 What amount should be reported as net cash provided by financing activities in Box's statement of cash flows?\nA. $70,000\nB. $75,000\nC. $80,000\nD. 100000\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"6SQk\", \"role\": \"Analyst\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\\n\\nThus, the amount reported as net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"wX39\", \"role\": \"Independent solver\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000  \\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"bqzT\", \"role\": \"Verifier\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\\n- Proceeds from sale of investments: This is part of investing activities.\\n\\nThus, the amount reported as net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4kUf\", \"role\": \"Critic\", \"text\": \"The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \\n\\n- Proceeds from long-term debt: $100,000\\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\\n\\nThus, the net cash provided by financing activities is $100,000.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n- Proceeds from sale of investments: This is part of investing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "4kUf",
+      "recipient": "wX39",
+      "kind": "peer",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 79,
+      "payload_bytes": 326
+    },
+    {
+      "sender": "wX39",
+      "recipient": "bqzT",
+      "kind": "peer",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\nProceeds from long-term debt: $100,000  \nLoss on sale of investment: This is a non-cash expense and does not affect cash flow.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 79,
+      "payload_bytes": 326
+    },
+    {
+      "sender": "wX39",
+      "recipient": "4kUf",
+      "kind": "peer",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000  \n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 91,
+      "payload_bytes": 371
+    },
+    {
+      "sender": "6SQk",
+      "recipient": "bqzT",
+      "kind": "peer",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 116,
+      "payload_bytes": 520
+    },
+    {
+      "sender": "wX39",
+      "recipient": "bqzT",
+      "kind": "peer",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000  \n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 91,
+      "payload_bytes": 371
+    },
+    {
+      "sender": "4kUf",
+      "recipient": "bqzT",
+      "kind": "peer",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 80,
+      "payload_bytes": 330
+    },
+    {
+      "sender": "6SQk",
+      "recipient": "6WRh",
+      "kind": "aggregate",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item and affects operating activities.\n- Proceeds from sale of investments: This is part of investing activities, not financing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 116,
+      "payload_bytes": 520
+    },
+    {
+      "sender": "wX39",
+      "recipient": "6WRh",
+      "kind": "aggregate",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000  \n- Loss on sale of investment: This is not part of financing activities; it is a loss on an investment, which is a non-cash item.  \n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 91,
+      "payload_bytes": 371
+    },
+    {
+      "sender": "bqzT",
+      "recipient": "6WRh",
+      "kind": "aggregate",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n- Proceeds from sale of investments: This is part of investing activities.\n\nThus, the amount reported as net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 98,
+      "payload_bytes": 424
+    },
+    {
+      "sender": "4kUf",
+      "recipient": "6WRh",
+      "kind": "aggregate",
+      "text": "The net cash provided by financing activities includes proceeds from long-term debt and any other financing activities. \n\n- Proceeds from long-term debt: $100,000\n- Loss on sale of investment: This is a non-cash item and not part of financing activities.\n\nThus, the net cash provided by financing activities is $100,000.\n\nFINAL: D",
+      "payload_tokens": 80,
+      "payload_bytes": 330
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.011540210000021034
+    }
+  ],
+  "embedding_wall_s": 0.011540210000021034,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 5221,
+  "peer_messages": 6,
+  "peer_payload_tokens": 536,
+  "peer_payload_bytes": 2244,
+  "all_logical_deliveries": 10,
+  "all_delivered_payload_tokens": 921,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

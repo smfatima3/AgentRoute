@@ -1,0 +1,431 @@
+{
+  "id": "mmlu/dev/165",
+  "split": "train",
+  "iteration": 22,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "A",
+  "final_text": "The peer reports consistently state that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 249,
+      "completion_tokens": 41,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1896569277,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9d8cd4c36c074cb884ec8c5e0889ef4a",
+      "system_fingerprint": null,
+      "response_text": "Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \n\nFINAL: A",
+      "wall_s": 0.5841959990000305
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 250,
+      "completion_tokens": 29,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1459427104,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7e9f2225bf7448f8b129736ea457a835",
+      "system_fingerprint": null,
+      "response_text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "wall_s": 0.4997703359999832
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 389,
+      "completion_tokens": 39,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1409488082,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-c4f480a5fdd248df87428efd848592f1",
+      "system_fingerprint": null,
+      "response_text": "Morning sickness is typically a problem during the first trimester of pregnancy, as this is when many women experience nausea and vomiting. This is a well-established fact in obstetrics.\n\nFINAL: A",
+      "wall_s": 0.5667592769998464
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 389,
+      "completion_tokens": 29,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 105823804,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-47c15efe5b364ca196ee80ff2c5a6326",
+      "system_fingerprint": null,
+      "response_text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "wall_s": 0.4923898909999025
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 250,
+      "completion_tokens": 29,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 599480641,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-fcbd3d161d174339a08fc3eb0689df19",
+      "system_fingerprint": null,
+      "response_text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "wall_s": 0.4962604459999511
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 318,
+      "completion_tokens": 33,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1349428105,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-572fcdb8f6584fbe8df044ab83fde46a",
+      "system_fingerprint": null,
+      "response_text": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A",
+      "wall_s": 0.5382018860000244
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 324,
+      "completion_tokens": 33,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1835963054,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-2ffd35e9e1014467bc3a92096b4f297e",
+      "system_fingerprint": null,
+      "response_text": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A",
+      "wall_s": 0.5247769709999375
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 381,
+      "completion_tokens": 30,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 953553200,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-dc9e3f63ce714019836d84663cf71488",
+      "system_fingerprint": null,
+      "response_text": "Morning sickness is typically a problem during the first trimester of pregnancy, as this is a well-established fact in obstetrics. \n\nFINAL: A",
+      "wall_s": 0.49352751299988995
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 501,
+      "completion_tokens": 35,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 807087597,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"FGkY\", \"role\": \"Verifier\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"bDws\", \"role\": \"Critic\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy, as this is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-eafd9adbc9974a059a820f2c92a34160",
+      "system_fingerprint": null,
+      "response_text": "The peer reports consistently state that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "wall_s": 0.528643842000065
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Morning sickness is typically a problem during the first trimester of pregnancy, as this is when many women experience nausea and vomiting. This is a well-established fact in obstetrics.\n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Morning sickness is typically a problem during the first trimester of pregnancy, as this is a well-established fact in obstetrics. \n\nFINAL: A"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nMorning sickness is typically a problem:\nA. during the first trimester\nB. during the second trimester\nC. during the third trimester\nD. all through the pregnancy\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"dLRD\", \"role\": \"Analyst\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"REGb\", \"role\": \"Independent solver\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"FGkY\", \"role\": \"Verifier\", \"text\": \"The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\\n\\nFINAL: A\", \"edge_type\": \"spatial\"}, {\"sender\": \"bDws\", \"role\": \"Critic\", \"text\": \"Morning sickness is typically a problem during the first trimester of pregnancy, as this is a well-established fact in obstetrics. \\n\\nFINAL: A\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports consistently state that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "dLRD",
+      "recipient": "FGkY",
+      "kind": "peer",
+      "text": "Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \n\nFINAL: A",
+      "payload_tokens": 40,
+      "payload_bytes": 199
+    },
+    {
+      "sender": "REGb",
+      "recipient": "FGkY",
+      "kind": "peer",
+      "text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "payload_tokens": 28,
+      "payload_bytes": 138
+    },
+    {
+      "sender": "dLRD",
+      "recipient": "bDws",
+      "kind": "peer",
+      "text": "Morning sickness is typically a problem during the first trimester. This is a well-established fact in obstetrics, as the first trimester is when many women experience nausea and vomiting. \n\nFINAL: A",
+      "payload_tokens": 40,
+      "payload_bytes": 199
+    },
+    {
+      "sender": "REGb",
+      "recipient": "bDws",
+      "kind": "peer",
+      "text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "payload_tokens": 28,
+      "payload_bytes": 138
+    },
+    {
+      "sender": "REGb",
+      "recipient": "dLRD",
+      "kind": "peer",
+      "text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "payload_tokens": 28,
+      "payload_bytes": 138
+    },
+    {
+      "sender": "dLRD",
+      "recipient": "FGkY",
+      "kind": "peer",
+      "text": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A",
+      "payload_tokens": 32,
+      "payload_bytes": 165
+    },
+    {
+      "sender": "dLRD",
+      "recipient": "bDws",
+      "kind": "peer",
+      "text": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A",
+      "payload_tokens": 32,
+      "payload_bytes": 165
+    },
+    {
+      "sender": "REGb",
+      "recipient": "bDws",
+      "kind": "peer",
+      "text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "payload_tokens": 28,
+      "payload_bytes": 138
+    },
+    {
+      "sender": "dLRD",
+      "recipient": "fPQG",
+      "kind": "aggregate",
+      "text": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A",
+      "payload_tokens": 32,
+      "payload_bytes": 165
+    },
+    {
+      "sender": "REGb",
+      "recipient": "fPQG",
+      "kind": "aggregate",
+      "text": "Morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics. \n\nFINAL: A",
+      "payload_tokens": 28,
+      "payload_bytes": 138
+    },
+    {
+      "sender": "FGkY",
+      "recipient": "fPQG",
+      "kind": "aggregate",
+      "text": "The peer report states that morning sickness is typically a problem during the first trimester of pregnancy. This is a well-established fact in obstetrics.\n\nFINAL: A",
+      "payload_tokens": 32,
+      "payload_bytes": 165
+    },
+    {
+      "sender": "bDws",
+      "recipient": "fPQG",
+      "kind": "aggregate",
+      "text": "Morning sickness is typically a problem during the first trimester of pregnancy, as this is a well-established fact in obstetrics. \n\nFINAL: A",
+      "payload_tokens": 29,
+      "payload_bytes": 141
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.00924418800013882
+    }
+  ],
+  "embedding_wall_s": 0.00924418800013882,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 3349,
+  "peer_messages": 8,
+  "peer_payload_tokens": 256,
+  "peer_payload_bytes": 1280,
+  "all_logical_deliveries": 12,
+  "all_delivered_payload_tokens": 377,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

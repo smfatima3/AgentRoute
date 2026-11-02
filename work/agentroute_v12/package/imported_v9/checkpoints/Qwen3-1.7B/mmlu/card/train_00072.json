@@ -1,0 +1,415 @@
+{
+  "id": "mmlu/dev/78",
+  "split": "train",
+  "iteration": 18,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "B",
+  "final_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25. \n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 309,
+      "completion_tokens": 89,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2032114180,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-880b9b8455b4429cb7f22c7779dd4ae4",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "wall_s": 0.8967520870000953
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 310,
+      "completion_tokens": 61,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 139916894,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d00a403e62f1462a99aee17020f4c925",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "wall_s": 0.7047507530000985
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 412,
+      "completion_tokens": 61,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1589712555,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-afc135c73d244e9998eee9bd9a171e0c",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "wall_s": 0.7197573230000671
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 623,
+      "completion_tokens": 89,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2073903626,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"85Bq\", \"role\": \"Analyst\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"fgeT\", \"role\": \"Independent solver\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-c8772f7130764bdf8470535813a99249",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "wall_s": 0.9111013289999619
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 309,
+      "completion_tokens": 89,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 872947307,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f4c96bed60ae4c79bcac69430e1d2cf9",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "wall_s": 0.8993621669999357
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 310,
+      "completion_tokens": 61,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 942252549,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-e05588c56ea6430a8eb418c06f1b2034",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "wall_s": 0.7101975890000176
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 310,
+      "completion_tokens": 89,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2003574788,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-2e4dda8a8aed427b8836550f4df528f4",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "wall_s": 0.9042675359999066
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 532,
+      "completion_tokens": 47,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 578233942,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"85Bq\", \"role\": \"Analyst\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-5c0ca5b2e7ff43cc8829d4e0d1bcc330",
+      "system_fingerprint": null,
+      "response_text": "107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "wall_s": 0.6123026209999125
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 726,
+      "completion_tokens": 90,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 740291588,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"85Bq\", \"role\": \"Analyst\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"fgeT\", \"role\": \"Independent solver\", \"text\": \"107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"ZXtq\", \"role\": \"Critic\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-4af0af9fcec44f5cb0bb6e659b93dc6f",
+      "system_fingerprint": null,
+      "response_text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25. \n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "wall_s": 0.9220782290000216
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"85Bq\", \"role\": \"Analyst\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"fgeT\", \"role\": \"Independent solver\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"85Bq\", \"role\": \"Analyst\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nA store sells 107 different colors of paint. They have 25 cans of each color in storage. The number of cans of paint the store has in storage can be found using the expression below. 107 × 25. How many cans of paint does the store have in storage?\nA. 749\nB. 2,675\nC. 2,945\nD. 4,250\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"85Bq\", \"role\": \"Analyst\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"fgeT\", \"role\": \"Independent solver\", \"text\": \"107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"PZWY\", \"role\": \"Verifier\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = 2,675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"ZXtq\", \"role\": \"Critic\", \"text\": \"The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\\n\\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25. \n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "PZWY",
+      "recipient": "fgeT",
+      "kind": "peer",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "payload_tokens": 60,
+      "payload_bytes": 169
+    },
+    {
+      "sender": "85Bq",
+      "recipient": "ZXtq",
+      "kind": "peer",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "payload_tokens": 88,
+      "payload_bytes": 207
+    },
+    {
+      "sender": "fgeT",
+      "recipient": "ZXtq",
+      "kind": "peer",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "payload_tokens": 60,
+      "payload_bytes": 169
+    },
+    {
+      "sender": "PZWY",
+      "recipient": "ZXtq",
+      "kind": "peer",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "payload_tokens": 60,
+      "payload_bytes": 169
+    },
+    {
+      "sender": "85Bq",
+      "recipient": "fgeT",
+      "kind": "peer",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "payload_tokens": 88,
+      "payload_bytes": 207
+    },
+    {
+      "sender": "PZWY",
+      "recipient": "fgeT",
+      "kind": "peer",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "payload_tokens": 60,
+      "payload_bytes": 169
+    },
+    {
+      "sender": "85Bq",
+      "recipient": "H5Kr",
+      "kind": "aggregate",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "payload_tokens": 88,
+      "payload_bytes": 207
+    },
+    {
+      "sender": "fgeT",
+      "recipient": "H5Kr",
+      "kind": "aggregate",
+      "text": "107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "payload_tokens": 46,
+      "payload_bytes": 65
+    },
+    {
+      "sender": "PZWY",
+      "recipient": "H5Kr",
+      "kind": "aggregate",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = 2,675\n\nFINAL: B",
+      "payload_tokens": 60,
+      "payload_bytes": 169
+    },
+    {
+      "sender": "ZXtq",
+      "recipient": "H5Kr",
+      "kind": "aggregate",
+      "text": "The store has 107 different colors of paint, and each color has 25 cans in storage. To find the total number of cans, we multiply 107 by 25.\n\n107 × 25 = (100 × 25) + (7 × 25) = 2500 + 175 = 2675\n\nFINAL: B",
+      "payload_tokens": 88,
+      "payload_bytes": 207
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.011795355999993262
+    }
+  ],
+  "embedding_wall_s": 0.011795355999993262,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4517,
+  "peer_messages": 6,
+  "peer_payload_tokens": 416,
+  "peer_payload_bytes": 1090,
+  "all_logical_deliveries": 10,
+  "all_delivered_payload_tokens": 698,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

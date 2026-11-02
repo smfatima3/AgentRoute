@@ -1,0 +1,431 @@
+{
+  "id": "mmlu/dev/117",
+  "split": "train",
+  "iteration": 20,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "D",
+  "final_text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 277,
+      "completion_tokens": 58,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 228479342,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d45147b15a1d45f6a4eb3e3f985839b5",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "wall_s": 0.6981816429999981
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 377,
+      "completion_tokens": 57,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 600755829,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-b83a488bd5e64bd1954cde60a5bc1f29",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "wall_s": 0.692656315000022
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 377,
+      "completion_tokens": 57,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 787309731,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-1f25ef00cfe7474cbe40fcbc15cc6cca",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "wall_s": 0.6798139929999252
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 462,
+      "completion_tokens": 57,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1490015874,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Ag4x\", \"role\": \"Verifier\", \"text\": \"The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-bde39f8c8da34129a9959cf3b55b1570",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "wall_s": 0.7284630079998351
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 277,
+      "completion_tokens": 63,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 557538763,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-573ad0df29e1409baeb09525237ff765",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "wall_s": 0.7718543989999489
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 382,
+      "completion_tokens": 63,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 821954685,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-b489071f5e6f43d2976fafb81a938a09",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "wall_s": 0.7518481500001144
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 382,
+      "completion_tokens": 63,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 410798604,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-83e11b230c74434f9b1d841e59a8e8ad",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "wall_s": 0.7405771219998769
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 473,
+      "completion_tokens": 63,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 873033165,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Ag4x\", \"role\": \"Verifier\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-dd1a17b2f40644c3b49ab25ee814a393",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "wall_s": 0.7014211190000879
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 658,
+      "completion_tokens": 63,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2017507709,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"UZx7\", \"role\": \"Independent solver\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Ag4x\", \"role\": \"Verifier\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"FSQp\", \"role\": \"Critic\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-4b2055e9c8c44edbbb93d162b28703d9",
+      "system_fingerprint": null,
+      "response_text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "wall_s": 0.7246823819998554
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Ag4x\", \"role\": \"Verifier\", \"text\": \"The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Ag4x\", \"role\": \"Verifier\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\nA. Weeks v. United States\nB. Betts v. Brady\nC. Mapp v. Ohio\nD. Miranda v. Arizona\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"um8c\", \"role\": \"Analyst\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"UZx7\", \"role\": \"Independent solver\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"Ag4x\", \"role\": \"Verifier\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"FSQp\", \"role\": \"Critic\", \"text\": \"The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "um8c",
+      "recipient": "Ag4x",
+      "kind": "peer",
+      "text": "The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "payload_tokens": 57,
+      "payload_bytes": 294
+    },
+    {
+      "sender": "um8c",
+      "recipient": "FSQp",
+      "kind": "peer",
+      "text": "The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "payload_tokens": 57,
+      "payload_bytes": 294
+    },
+    {
+      "sender": "um8c",
+      "recipient": "UZx7",
+      "kind": "peer",
+      "text": "The case that established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "payload_tokens": 57,
+      "payload_bytes": 294
+    },
+    {
+      "sender": "Ag4x",
+      "recipient": "UZx7",
+      "kind": "peer",
+      "text": "The case that established the precedent requiring police to inform suspects of their rights to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case mandated that police must inform suspects of their rights before interrogating them.\n\nFINAL: D",
+      "payload_tokens": 56,
+      "payload_bytes": 299
+    },
+    {
+      "sender": "um8c",
+      "recipient": "Ag4x",
+      "kind": "peer",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    },
+    {
+      "sender": "um8c",
+      "recipient": "FSQp",
+      "kind": "peer",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    },
+    {
+      "sender": "um8c",
+      "recipient": "UZx7",
+      "kind": "peer",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    },
+    {
+      "sender": "Ag4x",
+      "recipient": "UZx7",
+      "kind": "peer",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    },
+    {
+      "sender": "um8c",
+      "recipient": "LgLt",
+      "kind": "aggregate",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    },
+    {
+      "sender": "UZx7",
+      "recipient": "LgLt",
+      "kind": "aggregate",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    },
+    {
+      "sender": "Ag4x",
+      "recipient": "LgLt",
+      "kind": "aggregate",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    },
+    {
+      "sender": "FSQp",
+      "recipient": "LgLt",
+      "kind": "aggregate",
+      "text": "The case that established the precedent requiring a defendant to be informed of their right to remain silent, the right to a lawyer, and protection from self-incrimination is Miranda v. Arizona. This case set the standard for police interrogation procedures, requiring that suspects be informed of their rights before interrogation.\n\nFINAL: D",
+      "payload_tokens": 62,
+      "payload_bytes": 342
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.011040833000151906
+    }
+  ],
+  "embedding_wall_s": 0.011040833000151906,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4209,
+  "peer_messages": 8,
+  "peer_payload_tokens": 475,
+  "peer_payload_bytes": 2549,
+  "all_logical_deliveries": 12,
+  "all_delivered_payload_tokens": 723,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

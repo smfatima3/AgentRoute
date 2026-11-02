@@ -1,0 +1,450 @@
+{
+  "id": "mmlu/dev/80",
+  "split": "train",
+  "iteration": 4,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "C",
+  "final_text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 264,
+      "completion_tokens": 70,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 549368731,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-32a64e9460b145a88c24dad08967b3a0",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "wall_s": 0.7733786020000935
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 375,
+      "completion_tokens": 71,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1671512398,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7b492df025e6496181974ebfd488afd9",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "wall_s": 0.8272305039999992
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 376,
+      "completion_tokens": 71,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1488948153,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-3e7037f08e364432ae7a397934648782",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "wall_s": 0.8247926550000102
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 576,
+      "completion_tokens": 71,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 431097350,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The statement \\\"No people drive on Mars\\\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a18860ca2e6444f98c7b4d3a2d4c5e2a",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "wall_s": 0.8680632890000197
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 263,
+      "completion_tokens": 70,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1241979438,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-8ec6a7a71ca0462d94ae3723a9bd5bb0",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "wall_s": 0.8457193829999596
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 377,
+      "completion_tokens": 70,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1894800435,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-4bc026ee156b4afdb5bf382a61ebdcc5",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "wall_s": 0.8102084380000178
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 477,
+      "completion_tokens": 69,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1635544830,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-915fab56dda8486eab97e08a39d2b334",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "wall_s": 0.7695744939999258
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 575,
+      "completion_tokens": 70,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 245260831,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-619a99274b2447d99007a94fb0c0142c",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "wall_s": 0.7893945959999655
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 675,
+      "completion_tokens": 70,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 685316376,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-1b38a462366b456eb6528c5a1a23dda3",
+      "system_fingerprint": null,
+      "response_text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "wall_s": 0.8068004589999873
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The statement \\\"No people drive on Mars\\\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\n\nFINAL: C"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\n Select the best translation into predicate logic: No people drive on Mars.\nA. ~Pd\nB. (∀x)(Px ∨ ~Dx)\nC. (∀x)(Px ⊃ ~Dx)\nD. ~Dp\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\\n\\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The statement \\\"No people drive on Mars\\\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\n\nFINAL: C"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "urJN",
+      "recipient": "YSwX",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "payload_tokens": 70,
+      "payload_bytes": 277
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "payload_tokens": 70,
+      "payload_bytes": 277
+    },
+    {
+      "sender": "urJN",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" means that it is not the case that any person drives on Mars. In predicate logic, this is equivalent to saying that for all x, if x is a person, then x does not drive on Mars. This corresponds to the formula (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "payload_tokens": 70,
+      "payload_bytes": 277
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "urJN",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "urJN",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "payload_tokens": 68,
+      "payload_bytes": 260
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "4S82",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to: (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "urJN",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars.\n\nThis corresponds to: (∀x)(Px ⊃ ~Dx)\n\nFINAL: C",
+      "payload_tokens": 69,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The statement \"No people drive on Mars\" implies that it is not the case that any person drives on Mars. In predicate logic, this can be translated as: For all x, if x is a person, then x does not drive on Mars. This corresponds to (∀x)(Px ⊃ ~Dx).\n\nFINAL: C",
+      "payload_tokens": 68,
+      "payload_bytes": 260
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [],
+  "embedding_wall_s": 0,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4590,
+  "peer_messages": 11,
+  "peer_payload_tokens": 761,
+  "peer_payload_bytes": 2918,
+  "all_logical_deliveries": 15,
+  "all_delivered_payload_tokens": 1036,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

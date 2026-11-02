@@ -1,0 +1,202 @@
+{
+  "study": "AgentRoute-v10-evidence",
+  "phase": "development",
+  "models": [
+    "Qwen/Qwen3-1.7B"
+  ],
+  "optional_models": [],
+  "datasets": [
+    "math",
+    "bbh"
+  ],
+  "methods": [
+    "single",
+    "broadcast",
+    "no_comm",
+    "cascade",
+    "safesieve",
+    "agentnet",
+    "card",
+    "selforg"
+  ],
+  "controls": [
+    "route_vote",
+    "dense_vote",
+    "route_paid",
+    "dense_paid",
+    "no_comm_vote",
+    "route_no_dissent_filter",
+    "route_no_grouping",
+    "route_no_summary",
+    "route_cap2",
+    "random_cap2",
+    "fixed_cap2"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "sample_seed": 97,
+  "agents": 4,
+  "rounds": 2,
+  "jobs_per_gpu": 2,
+  "temperature": 0.2,
+  "max_tokens": 2048,
+  "timeout_s": 300,
+  "thinking": false,
+  "roles": [
+    "Analyst",
+    "Independent solver",
+    "Verifier",
+    "Critic"
+  ],
+  "noninferiority_margin": null,
+  "fit": {
+    "iterations": 30,
+    "batch_size": 4,
+    "lr": 0.1,
+    "seed": 11
+  },
+  "routing": {
+    "mode": "local_answer_groups",
+    "paid_llm_routing": false,
+    "hard_recipient_cap": null
+  },
+  "embedding": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "device": "cpu"
+  },
+  "selforg": {
+    "top_k": 2,
+    "max_rounds": 2,
+    "sim_threshold": 0.75,
+    "consensus_min_sim": 0.95,
+    "consensus_range_eps": 0.1,
+    "reform": true
+  },
+  "safesieve": {
+    "alpha": 0.5,
+    "beta_growth_rate": 1.0,
+    "min_threshold": 0.65,
+    "max_threshold": 0.9,
+    "prune_every": 5,
+    "start_pruning_batch": 10,
+    "max_pruning_times": 7,
+    "pruning_rate": 0.25,
+    "min_agents": 2
+  },
+  "card": {
+    "penalty": 0.01,
+    "relative_edge_price": 1.0,
+    "role_feature_prior": "ordered_chain"
+  },
+  "agentnet": {
+    "forward_path_max_length": 3,
+    "max_execution_times": 5,
+    "max_calls_per_query": 80,
+    "retrieval_num": 3
+  },
+  "transport": {
+    "mode": "local",
+    "location_aware": true,
+    "buffer_during_migration": true,
+    "max_queue": 1000,
+    "max_retries": 2,
+    "deadline_s": 30
+  },
+  "answer_contract": "literal-final-v3-evidence",
+  "development_comparison": {
+    "datasets": [
+      "math",
+      "bbh"
+    ],
+    "limit": 10,
+    "seed": 17,
+    "fit_missing": false
+  },
+  "local_decision": {
+    "version": "v10-generalized-local-vote",
+    "supported_metric": [
+      "math",
+      "exact"
+    ],
+    "unanimous_early_stop": true,
+    "tie_break": "latest_plurality_then_initial_support_then_agent_order",
+    "paid_aggregator": false
+  },
+  "stream": true,
+  "evidence_arms": {
+    "cascade": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": true
+    },
+    "route_vote": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": false
+    },
+    "dense_vote": {
+      "communication": "dense",
+      "aggregation": "vote",
+      "early_stop": false
+    },
+    "route_paid": {
+      "communication": "route",
+      "aggregation": "paid",
+      "early_stop": false
+    },
+    "dense_paid": {
+      "communication": "dense",
+      "aggregation": "paid",
+      "early_stop": false
+    },
+    "no_comm_vote": {
+      "communication": "none",
+      "aggregation": "vote",
+      "early_stop": false
+    },
+    "route_no_dissent_filter": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": false,
+      "filter_dissent": false
+    },
+    "route_no_grouping": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": false,
+      "group_answers": false
+    },
+    "route_no_summary": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": false,
+      "vote_summary": false
+    },
+    "route_cap2": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": false,
+      "k": 2,
+      "payload_cap_bytes": 4096
+    },
+    "random_cap2": {
+      "communication": "random",
+      "aggregation": "vote",
+      "early_stop": false,
+      "k": 2,
+      "payload_cap_bytes": 4096
+    },
+    "fixed_cap2": {
+      "communication": "fixed",
+      "aggregation": "vote",
+      "early_stop": false,
+      "k": 2,
+      "payload_cap_bytes": 4096
+    }
+  },
+  "confirmatory_status": "UNFROZEN; noninferiority margin requires substantive justification before test",
+  "api_key_env": "VLLM_API_KEY"
+}

@@ -1,0 +1,1 @@
+Raw data is distributed through GitHub release assets. Verify each SHA-256 against RELEASE_ASSETS.json before extraction. PREPARED_NOT_UPLOADED is a staging state and does not mean remote publication succeeded. Physical transport is incomplete and its final evidence is not in this snapshot.

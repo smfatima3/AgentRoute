@@ -1,0 +1,205 @@
+{
+  "study": "AgentRoute-compact-v11",
+  "phase": "compact",
+  "models": [
+    "Qwen/Qwen3-1.7B"
+  ],
+  "optional_models": [],
+  "datasets": [
+    "mmlu",
+    "svamp",
+    "math",
+    "bbh"
+  ],
+  "methods": [
+    "cascade",
+    "dense",
+    "no_comm",
+    "safesieve",
+    "card",
+    "selforg",
+    "agentnet",
+    "single"
+  ],
+  "controls": [
+    "original",
+    "corroborating",
+    "route_fixed",
+    "dense_fixed",
+    "random_fixed",
+    "toggle_filter"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "sample_seed": 20261029,
+  "agents": 4,
+  "rounds": 2,
+  "jobs_per_gpu": 2,
+  "temperature": 0.2,
+  "max_tokens": 2048,
+  "timeout_s": 300,
+  "thinking": false,
+  "roles": [
+    "Analyst",
+    "Independent solver",
+    "Verifier",
+    "Critic"
+  ],
+  "noninferiority_margin": 0.02,
+  "fit": {
+    "iterations": 30,
+    "batch_size": 4,
+    "lr": 0.1,
+    "seed": 11
+  },
+  "routing": {
+    "mode": "local_answer_groups",
+    "paid_llm_routing": false,
+    "hard_recipient_cap": null
+  },
+  "embedding": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "device": "cpu"
+  },
+  "selforg": {
+    "top_k": 2,
+    "max_rounds": 2,
+    "sim_threshold": 0.75,
+    "consensus_min_sim": 0.95,
+    "consensus_range_eps": 0.1,
+    "reform": true
+  },
+  "safesieve": {
+    "alpha": 0.5,
+    "beta_growth_rate": 1.0,
+    "min_threshold": 0.65,
+    "max_threshold": 0.9,
+    "prune_every": 5,
+    "start_pruning_batch": 10,
+    "max_pruning_times": 7,
+    "pruning_rate": 0.25,
+    "min_agents": 2
+  },
+  "card": {
+    "penalty": 0.01,
+    "relative_edge_price": 1.0,
+    "role_feature_prior": "ordered_chain"
+  },
+  "agentnet": {
+    "forward_path_max_length": 3,
+    "max_execution_times": 5,
+    "max_calls_per_query": 80,
+    "retrieval_num": 3
+  },
+  "transport": {
+    "mode": "local",
+    "location_aware": true,
+    "buffer_during_migration": true,
+    "max_queue": 1000,
+    "max_retries": 2,
+    "deadline_s": 30
+  },
+  "answer_contract": "literal-final-v3-evidence",
+  "development_comparison": {
+    "datasets": [
+      "math",
+      "bbh"
+    ],
+    "limit": 10,
+    "seed": 17,
+    "fit_missing": false
+  },
+  "local_decision": {
+    "version": "v10-generalized-local-vote",
+    "supported_metric": [
+      "math",
+      "exact",
+      "numeric",
+      "mcq"
+    ],
+    "unanimous_early_stop": true,
+    "tie_break": "latest_plurality_then_initial_support_then_agent_order",
+    "paid_aggregator": false
+  },
+  "stream": true,
+  "evidence_arms": {
+    "original": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": true,
+      "filter_dissent": true,
+      "group_answers": true,
+      "k": 3
+    },
+    "corroborating": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": true,
+      "filter_dissent": false,
+      "group_answers": true,
+      "k": 3
+    },
+    "cascade": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": true,
+      "filter_dissent": true,
+      "group_answers": true,
+      "k": 3
+    },
+    "dense": {
+      "communication": "dense",
+      "aggregation": "vote",
+      "early_stop": true,
+      "filter_dissent": true,
+      "group_answers": true,
+      "k": 3
+    },
+    "no_comm": {
+      "communication": "none",
+      "aggregation": "vote",
+      "early_stop": true,
+      "filter_dissent": true,
+      "group_answers": true,
+      "k": 3
+    },
+    "route_fixed": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": false,
+      "filter_dissent": true,
+      "group_answers": true,
+      "k": 3
+    },
+    "dense_fixed": {
+      "communication": "dense",
+      "aggregation": "vote",
+      "early_stop": false,
+      "filter_dissent": true,
+      "group_answers": true,
+      "k": 3
+    },
+    "random_fixed": {
+      "communication": "random",
+      "aggregation": "vote",
+      "early_stop": false,
+      "filter_dissent": true,
+      "group_answers": true,
+      "k": 3
+    },
+    "toggle_filter": {
+      "communication": "route",
+      "aggregation": "vote",
+      "early_stop": true,
+      "filter_dissent": false,
+      "group_answers": true,
+      "k": 3
+    }
+  },
+  "confirmatory_status": "MMLU selected-panel primary; transfer panels and component controls exploratory; adaptation, not native-paper reproduction",
+  "api_key_env": "VLLM_API_KEY",
+  "selforg_variant": "Pinned original SelfOrg implementation with DAG reform, weighted aggregation and its configured consensus rule; not the separately named Efficient SelfOrg variant"
+}

@@ -1,0 +1,423 @@
+{
+  "id": "mmlu/dev/182",
+  "split": "train",
+  "iteration": 9,
+  "status": "ok",
+  "quality": 1.0,
+  "format_ok": true,
+  "prediction": "C",
+  "final_text": "All peer reports agree that the middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 278,
+      "completion_tokens": 66,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 600739510,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f09b6b1c04c64feeb164efe9e72a13ab",
+      "system_fingerprint": null,
+      "response_text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C",
+      "wall_s": 0.7278965900000003
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 384,
+      "completion_tokens": 66,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 664772439,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"5Vvk\", \"role\": \"Verifier\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-154fb97209d243d9ab563104f305f30b",
+      "system_fingerprint": null,
+      "response_text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C",
+      "wall_s": 0.7402784390000079
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 384,
+      "completion_tokens": 59,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 59220052,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AM9c\", \"role\": \"Critic\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-5b835a07ab664a58b91dfad20324079a",
+      "system_fingerprint": null,
+      "response_text": "A valid categorical syllogism must satisfy the requirement that the middle term is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C",
+      "wall_s": 0.6894320680000874
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 378,
+      "completion_tokens": 40,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2028287866,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy the requirement that the middle term is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-af33feb27b80434dbc5f05eaf61eb843",
+      "system_fingerprint": null,
+      "response_text": "The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+      "wall_s": 0.5608728849999807
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 277,
+      "completion_tokens": 65,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1095202812,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-73c320b6a7714c6d802cbf9f005f7172",
+      "system_fingerprint": null,
+      "response_text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\n\nFINAL: C",
+      "wall_s": 0.7221289489999663
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 384,
+      "completion_tokens": 40,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 477250488,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f61ff2e07ab24f42b6f0993bcbbd7e4f",
+      "system_fingerprint": null,
+      "response_text": "The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+      "wall_s": 0.5699412420000272
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 384,
+      "completion_tokens": 59,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 2026669320,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-d1c711fc160548cc9ed675a5ace30b50",
+      "system_fingerprint": null,
+      "response_text": "A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, which is a necessary condition for a valid syllogism.\n\nFINAL: C",
+      "wall_s": 0.6890691820000256
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 452,
+      "completion_tokens": 49,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 393211938,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"5Vvk\", \"role\": \"Verifier\", \"text\": \"The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-999a0b89c0f144c9b358403c0779354d",
+      "system_fingerprint": null,
+      "response_text": "A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+      "wall_s": 0.6188872820000597
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 618,
+      "completion_tokens": 45,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1604730529,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"tjiC\", \"role\": \"Independent solver\", \"text\": \"A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"5Vvk\", \"role\": \"Verifier\", \"text\": \"The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"AM9c\", \"role\": \"Critic\", \"text\": \"A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, which is a necessary condition for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-de9801324c9d4e259e7d3258d2401056",
+      "system_fingerprint": null,
+      "response_text": "All peer reports agree that the middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+      "wall_s": 0.6017922409999983
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"5Vvk\", \"role\": \"Verifier\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"AM9c\", \"role\": \"Critic\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A valid categorical syllogism must satisfy the requirement that the middle term is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy the requirement that the middle term is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, which is a necessary condition for a valid syllogism.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"5Vvk\", \"role\": \"Verifier\", \"text\": \"The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhich of the following is true of a valid categorical syllogism?\nA. The minor premise must deny the antecedent\nB. The major premise must affirm the consequent\nC. The middle term must be used in at least one premise in a universal or unqualified sense\nD. All of the above\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"LWvi\", \"role\": \"Analyst\", \"text\": \"A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"tjiC\", \"role\": \"Independent solver\", \"text\": \"A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"5Vvk\", \"role\": \"Verifier\", \"text\": \"The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"AM9c\", \"role\": \"Critic\", \"text\": \"A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, which is a necessary condition for a valid syllogism.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "All peer reports agree that the middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "5Vvk",
+      "recipient": "AM9c",
+      "kind": "peer",
+      "text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C",
+      "payload_tokens": 65,
+      "payload_bytes": 314
+    },
+    {
+      "sender": "AM9c",
+      "recipient": "LWvi",
+      "kind": "peer",
+      "text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C",
+      "payload_tokens": 65,
+      "payload_bytes": 314
+    },
+    {
+      "sender": "LWvi",
+      "recipient": "tjiC",
+      "kind": "peer",
+      "text": "A valid categorical syllogism must satisfy the requirement that the middle term is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one of the premises, allowing for a valid syllogism.\n\nFINAL: C",
+      "payload_tokens": 58,
+      "payload_bytes": 272
+    },
+    {
+      "sender": "LWvi",
+      "recipient": "5Vvk",
+      "kind": "peer",
+      "text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\n\nFINAL: C",
+      "payload_tokens": 64,
+      "payload_bytes": 310
+    },
+    {
+      "sender": "LWvi",
+      "recipient": "AM9c",
+      "kind": "peer",
+      "text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\n\nFINAL: C",
+      "payload_tokens": 64,
+      "payload_bytes": 310
+    },
+    {
+      "sender": "LWvi",
+      "recipient": "tjiC",
+      "kind": "peer",
+      "text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\n\nFINAL: C",
+      "payload_tokens": 64,
+      "payload_bytes": 310
+    },
+    {
+      "sender": "5Vvk",
+      "recipient": "tjiC",
+      "kind": "peer",
+      "text": "The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+      "payload_tokens": 39,
+      "payload_bytes": 186
+    },
+    {
+      "sender": "LWvi",
+      "recipient": "DEiJ",
+      "kind": "aggregate",
+      "text": "A valid categorical syllogism must satisfy certain logical requirements. One key requirement is that the middle term must be used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, allowing the syllogism to be valid.\n\nFINAL: C",
+      "payload_tokens": 64,
+      "payload_bytes": 310
+    },
+    {
+      "sender": "tjiC",
+      "recipient": "DEiJ",
+      "kind": "aggregate",
+      "text": "A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+      "payload_tokens": 48,
+      "payload_bytes": 224
+    },
+    {
+      "sender": "5Vvk",
+      "recipient": "DEiJ",
+      "kind": "aggregate",
+      "text": "The middle term must be used in at least one premise in a universal or unqualified sense to ensure validity. This is a fundamental requirement of a valid categorical syllogism.\n\nFINAL: C",
+      "payload_tokens": 39,
+      "payload_bytes": 186
+    },
+    {
+      "sender": "AM9c",
+      "recipient": "DEiJ",
+      "kind": "aggregate",
+      "text": "A valid categorical syllogism must have a middle term that is used in at least one premise in a universal or unqualified sense. This ensures that the middle term is distributed in at least one premise, which is a necessary condition for a valid syllogism.\n\nFINAL: C",
+      "payload_tokens": 58,
+      "payload_bytes": 265
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [
+    {
+      "texts": 1,
+      "wall_s": 0.010659367000016573
+    }
+  ],
+  "embedding_wall_s": 0.010659367000016573,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4028,
+  "peer_messages": 7,
+  "peer_payload_tokens": 419,
+  "peer_payload_bytes": 2016,
+  "all_logical_deliveries": 11,
+  "all_delivered_payload_tokens": 628,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

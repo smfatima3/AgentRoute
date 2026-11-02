@@ -1,0 +1,442 @@
+{
+  "id": "mmlu/dev/58",
+  "split": "train",
+  "iteration": 2,
+  "status": "ok",
+  "quality": 0.0,
+  "format_ok": true,
+  "prediction": "B",
+  "final_text": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 257,
+      "completion_tokens": 65,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1189842599,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-ca17157d4f1145649201bc7ce9f06725",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\n\nThe correct answer is: FINAL: C",
+      "wall_s": 0.7372045609999986
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 363,
+      "completion_tokens": 61,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1149255698,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\\n\\nThe correct answer is: FINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f1aaa069ec4041309fd15b3afa10c90b",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\n\nFINAL: C",
+      "wall_s": 0.7296361409999008
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 454,
+      "completion_tokens": 61,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 774714143,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\\n\\nThe correct answer is: FINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-f2552b62ef4f480887b606d88c9e1b0b",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\n\nFINAL: C",
+      "wall_s": 0.7436908209999729
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 453,
+      "completion_tokens": 65,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 131837907,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\\n\\nThe correct answer is: FINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9430e94121624a849a1c10415a9bafa8",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. A buffer overflow occurs when a program writes more data to a buffer than it can hold, leading to data being written outside the buffer's boundaries. This allows attackers to read data from memory, including cryptographic keys.\n\nFINAL: C",
+      "wall_s": 0.7624491589999707
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 256,
+      "completion_tokens": 67,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1687582125,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-41af7f8116d64c88a55252d6e8bba102",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "wall_s": 0.7734884710000642
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 365,
+      "completion_tokens": 51,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1479273765,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-734b1845d3974da2b72982b98f3294bd",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "wall_s": 0.6759512910000467
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 350,
+      "completion_tokens": 51,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 433388310,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-7fcc9121957148f3998e87eaa15a1e92",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "wall_s": 0.7185884529999385
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 525,
+      "completion_tokens": 51,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1423766747,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-85fdfb9d49de467087f0159c4c08e3fd",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "wall_s": 0.6725515729999643
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 605,
+      "completion_tokens": 51,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 835795661,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-e21b0f41371d4abb9ead357c3323b5a4",
+      "system_fingerprint": null,
+      "response_text": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "wall_s": 0.6879695129998709
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\n\nThe correct answer is: FINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\\n\\nThe correct answer is: FINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\\n\\nThe correct answer is: FINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\\n\\nThe correct answer is: FINAL: C\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\\n\\nFINAL: C\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. A buffer overflow occurs when a program writes more data to a buffer than it can hold, leading to data being written outside the buffer's boundaries. This allows attackers to read data from memory, including cryptographic keys.\n\nFINAL: C"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nExploitation of the Heartbleed bug permits\nA. overwriting cryptographic keys in memory\nB. a kind of code injection\nC. a read outside bounds of a buffer\nD. a format string attack\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "4S82",
+      "recipient": "YSwX",
+      "kind": "peer",
+      "text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\n\nThe correct answer is: FINAL: C",
+      "payload_tokens": 64,
+      "payload_bytes": 354
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\n\nFINAL: C",
+      "payload_tokens": 60,
+      "payload_bytes": 329
+    },
+    {
+      "sender": "4S82",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\n\nThe correct answer is: FINAL: C",
+      "payload_tokens": 64,
+      "payload_bytes": 354
+    },
+    {
+      "sender": "4S82",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a buffer overflow vulnerability in the code.\n\nThe correct answer is: FINAL: C",
+      "payload_tokens": 64,
+      "payload_bytes": 354
+    },
+    {
+      "sender": "urJN",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The Heartbleed bug was a buffer overflow vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the memory of affected systems, including cryptographic keys, private keys, and other sensitive information. This is achieved by exploiting a read outside bounds of a buffer.\n\nFINAL: C",
+      "payload_tokens": 60,
+      "payload_bytes": 329
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 66,
+      "payload_bytes": 345
+    },
+    {
+      "sender": "4S82",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 50,
+      "payload_bytes": 258
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 66,
+      "payload_bytes": 345
+    },
+    {
+      "sender": "4S82",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 50,
+      "payload_bytes": 258
+    },
+    {
+      "sender": "urJN",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 50,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The Heartbleed bug was a serious vulnerability in the OpenSSL implementation of the TLS protocol. It allowed attackers to read data from the server's memory, including cryptographic keys, which could be used to compromise security. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 66,
+      "payload_bytes": 345
+    },
+    {
+      "sender": "4S82",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The Heartbleed bug exploited a vulnerability in OpenSSL, allowing attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 50,
+      "payload_bytes": 258
+    },
+    {
+      "sender": "urJN",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 50,
+      "payload_bytes": 261
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The Heartbleed bug exploited a vulnerability in OpenSSL that allowed attackers to read data from the server's memory, including cryptographic keys. This is a form of code injection, as it involved accessing memory that was not intended to be accessed.\n\nFINAL: B",
+      "payload_tokens": 50,
+      "payload_bytes": 261
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [],
+  "embedding_wall_s": 0,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4151,
+  "peer_messages": 10,
+  "peer_payload_tokens": 594,
+  "peer_payload_bytes": 3187,
+  "all_logical_deliveries": 14,
+  "all_delivered_payload_tokens": 810,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

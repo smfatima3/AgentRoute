@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "model": "Qwen/Qwen3-1.7B",
+  "name": "AgentRoute completion-first v12",
+  "generation_counts": {
+    "development": 120,
+    "main_mmlu": 800,
+    "transfer_svamp": 480,
+    "short_math": 400,
+    "short_bbh": 400,
+    "component_ablations": 160,
+    "seed_sensitivity": 240,
+    "live_anchors": 40,
+    "aggregation_controls": 80,
+    "self_consistency": 40,
+    "selforg_variant": 40
+  },
+  "transport_counts": {
+    "transport_anchors": 18,
+    "transport_scaling": 72
+  },
+  "fitting_counts": {
+    "baseline_fitting": 3
+  },
+  "stage_ablation_count_per_additional_stage": 40,
+  "main_methods": [
+    "agentroute",
+    "dense",
+    "no_communication",
+    "safesieve",
+    "card",
+    "selforg",
+    "agentnet",
+    "single"
+  ],
+  "panel_sizes": {
+    "mmlu": 100,
+    "svamp": 60,
+    "math": 50,
+    "bbh": 50
+  },
+  "primary_seed": 17,
+  "extra_seeds": [
+    29,
+    43
+  ],
+  "gpu_worker_limit": 2,
+  "query_concurrency_per_gpu": 2,
+  "scientific_completion_is_not_guaranteed_by_execution": true,
+  "authoring_status": "SPECIFICATION_ONLY_NOT_AN_EXECUTED_CAMPAIGN",
+  "old_suggested_campaign_caps_superseded": true,
+  "actual_user_and_account_spending_limits_must_be_respected": true,
+  "required_artifact_roles": [
+    "results_report",
+    "statistics",
+    "ablations",
+    "scaling",
+    "figures",
+    "method_fidelity",
+    "reuse_audit",
+    "training_ledger",
+    "cost_ledger",
+    "source_lock",
+    "split_manifest",
+    "independent_rescore",
+    "protocol_audit",
+    "shutdown_evidence",
+    "archive_verification",
+    "resume"
+  ]
+}

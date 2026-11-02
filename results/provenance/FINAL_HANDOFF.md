@@ -1,0 +1,13 @@
+# Current recovery handoff — 2026-11-02
+
+Quality: all 1,540 retained held-out evaluations and statistical analysis are complete. STATISTICS_LATEST.json points to verified outputs. 1,583/1,673 retained IDs accepted including development/fitting; physical transport remains 0/90 accepted.
+
+Latest verified provider state: coordinator sb-01M6DCGP67R5F6BWA234MZFHH2 exited 137 before worker allocation. See PHYSICAL_VOLUME_STATUS.json. Memory pressure is suspected, not proven. Local physical_campaign_v3.py now keeps only replay IDs/deliveries, and launch_physical_v3.py preserves the cumulative spending ceiling across retries. These changes are not yet verified deployed. A local credential wrapper may be awaiting hidden input; inspect before starting another. Never duplicate a live cloud controller.
+
+Budget: additional $10 authorized; immutable cumulative ceiling $37.357114609992166. Preserve all previous failed-run costs. No GPU needed. Cloud checkpoints every 5 minutes and result exports every 20 minutes when controller is running. Prefer inspect_transport_volume.py through authenticated_modal.py for read-only provider/Volume status. Do not put credentials in files.
+
+GitHub: user requests all important code/data at smfatima3/AgentRoute; live remote empty at last inspection. Prepared clone work/AgentRoute_publish; data archives work/github_transfer_assets. Recursive secret scan PASSED, embedded upstream credential redacted only in public copies; PUBLIC_REDACTIONS.json records mappings. No push and no original local deletions yet. GitHub authentication is not complete. Third device login session 48594 is awaiting browser authorization; code expires, verify gh auth status rather than assuming success. User clarified prior authorization replies did not mean CLI sign-in had occurred. Device authorization grants CLI access via browser; do not request a password/token.
+
+Finish publication after verified auth: recheck staged source inventory/secret scan, commit using branch codex/qwen3-1.7b-study, push without force, upload data as release assets and verify remote hashes. Keep PREPARED_NOT_UPLOADED status until confirmed. Only delete obsolete local copies after successful remote verification; retain active/recovery dependencies. README must disclose incomplete transport and unfavorable quality results. All raw archives are immutable snapshots; later controller changes/status are in the source repository, not retroactively executed evidence.
+
+One-time automation agentroute-final-results currently targets Nov3 01:00 PKT. It must inspect authoritative state and must not assume a run restarted or completed; adjust schedule only after a verified launch deadline. No recurring Codex checkpoint monitors.

@@ -1,0 +1,18 @@
+method_name: selforg
+random_seed: 2025
+roles: ["Assistant", "Programmer", "Mathematician", "Economist", "Psychologist" , "Historian"] 
+
+num_agents: 5
+top_k: 2
+max_rounds: 2
+consensus_min_sim: 0.95
+sim_threshold: 0.75
+
+temperature: 0.5
+enforce_dag: true
+aggregate_mode: "weighted"   # "weighted" / "single"
+embedding_dim: 512
+consensus_range_eps: 0.1  # similarity spread # 0.05 - only condition 1
+reform: true
+
+# emb_model: "Qwen/Qwen3-Embedding-0.6B"

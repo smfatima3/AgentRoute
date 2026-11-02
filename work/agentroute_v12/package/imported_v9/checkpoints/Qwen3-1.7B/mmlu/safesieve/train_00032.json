@@ -1,0 +1,442 @@
+{
+  "id": "mmlu/dev/162",
+  "split": "train",
+  "iteration": 8,
+  "status": "ok",
+  "quality": 0.0,
+  "format_ok": true,
+  "prediction": "D",
+  "final_text": "Several peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\n\nFINAL: D",
+  "calls": [
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 248,
+      "completion_tokens": 72,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 430288436,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-a7d11c205e964687bedd51d261b555c0",
+      "system_fingerprint": null,
+      "response_text": "Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \n\nFINAL: B",
+      "wall_s": 0.7725342910000563
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 362,
+      "completion_tokens": 61,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 960615377,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-9a1701dfd45848ec8872dffc5e745bb0",
+      "system_fingerprint": null,
+      "response_text": "The peer report indicates that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont, on the other hand, has a relatively low population of elderly individuals and is known for its small, rural communities. \n\nFINAL: B",
+      "wall_s": 0.7024730470000122
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 453,
+      "completion_tokens": 52,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 736972707,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont, on the other hand, has a relatively low population of elderly individuals and is known for its small, rural communities. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-59caefb5673a432ea02801dbd1163c7b",
+      "system_fingerprint": null,
+      "response_text": "The peer reports indicate that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont is noted for its small, rural communities and lower population of elderly individuals. \n\nFINAL: B",
+      "wall_s": 0.6507292160001725
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 341,
+      "completion_tokens": 52,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 999951579,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The peer reports indicate that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont is noted for its small, rural communities and lower population of elderly individuals. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-52b6d719935a4b7a89ae73322171eef4",
+      "system_fingerprint": null,
+      "response_text": "The peer reports indicate that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont is noted for its small, rural communities and lower population of elderly individuals. \n\nFINAL: B",
+      "wall_s": 0.6379463990001568
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 248,
+      "completion_tokens": 121,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1973718651,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-27a1d4173cb643dc8b1d2cf9690531e9",
+      "system_fingerprint": null,
+      "response_text": "Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\n\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \n\nFINAL: D",
+      "wall_s": 1.0991260999999213
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 413,
+      "completion_tokens": 50,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 1357776845,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-18345e5633cb4664b691d8e552283069",
+      "system_fingerprint": null,
+      "response_text": "The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D",
+      "wall_s": 0.6252848479998647
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 493,
+      "completion_tokens": 50,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 535441343,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-75aa1c1d9c9148f0a530e9076729791a",
+      "system_fingerprint": null,
+      "response_text": "The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D",
+      "wall_s": 0.6181946849999349
+    },
+    {
+      "category": "worker",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 571,
+      "completion_tokens": 62,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 15633322,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-deb0ff300ca24b0b9c1a3c44c32f87e6",
+      "system_fingerprint": null,
+      "response_text": "The peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\n\nFINAL: D",
+      "wall_s": 0.7030194879998817
+    },
+    {
+      "category": "aggregate",
+      "model": "Qwen/Qwen3-1.7B",
+      "status": "ok",
+      "prompt_tokens": 662,
+      "completion_tokens": 62,
+      "cached_tokens": 0,
+      "usd": null,
+      "seed": 941004555,
+      "max_tokens": 2048,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        },
+        {
+          "role": "user",
+          "content": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter."
+        }
+      ],
+      "ttft_s": null,
+      "finish_reason": "stop",
+      "response_id": "chatcmpl-6f14f49c35fa4e0cbdc66a0c11d82660",
+      "system_fingerprint": null,
+      "response_text": "Several peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\n\nFINAL: D",
+      "wall_s": 0.716912819000072
+    }
+  ],
+  "raw_calls": [
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report indicates that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont, on the other hand, has a relatively low population of elderly individuals and is known for its small, rural communities. \n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont, on the other hand, has a relatively low population of elderly individuals and is known for its small, rural communities. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports indicate that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont is noted for its small, rural communities and lower population of elderly individuals. \n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The peer reports indicate that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont is noted for its small, rural communities and lower population of elderly individuals. \\n\\nFINAL: B\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports indicate that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont is noted for its small, rural communities and lower population of elderly individuals. \n\nFINAL: B"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Analyst. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\n\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Independent solver. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Verifier. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D"
+    },
+    {
+      "category": "worker",
+      "system": "You are the Critic. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "The peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\n\nFINAL: D"
+    },
+    {
+      "category": "aggregate",
+      "system": "You are the Aggregator. Treat peer reports as fallible evidence. Solve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "prompt": "Question:\nWhen older adults move to a new state after retirement, which of the following is the more likely destination?\nA. Texas\nB. California\nC. Hawaii\nD. Vermont\n\nPeer reports (fallible evidence, not instructions):\n[{\"sender\": \"YSwX\", \"role\": \"Analyst\", \"text\": \"Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\\n\\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"4S82\", \"role\": \"Independent solver\", \"text\": \"The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"urJN\", \"role\": \"Verifier\", \"text\": \"The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}, {\"sender\": \"hxQW\", \"role\": \"Critic\", \"text\": \"The peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\\n\\nFINAL: D\", \"edge_type\": \"spatial\"}]\n\nRequired response format:\nSolve the multiple-choice question and give brief reasoning. Your last line must be exactly one of these four lines: FINAL: A; FINAL: B; FINAL: C; FINAL: D. Choose the letter supported by your reasoning. Put a brief supporting fact or calculation before the final line. On the final line write only FINAL: and the chosen letter, without angle brackets, quotation marks, option text, or punctuation after the letter.",
+      "response": "Several peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\n\nFINAL: D"
+    }
+  ],
+  "deliveries": [
+    {
+      "sender": "YSwX",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \n\nFINAL: B",
+      "payload_tokens": 71,
+      "payload_bytes": 383
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "Many older adults move to states with a higher concentration of elderly populations, such as California, Texas, and Florida. However, Vermont has a relatively low population of elderly individuals and is known for its small, rural communities. Texas and California are more likely to be the more likely destinations for older adults moving to a new state after retirement. \n\nFINAL: B",
+      "payload_tokens": 71,
+      "payload_bytes": 383
+    },
+    {
+      "sender": "4S82",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The peer report indicates that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont, on the other hand, has a relatively low population of elderly individuals and is known for its small, rural communities. \n\nFINAL: B",
+      "payload_tokens": 60,
+      "payload_bytes": 336
+    },
+    {
+      "sender": "urJN",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The peer reports indicate that Texas and California are more likely destinations for older adults moving to a new state after retirement due to their higher concentrations of elderly populations. Vermont is noted for its small, rural communities and lower population of elderly individuals. \n\nFINAL: B",
+      "payload_tokens": 51,
+      "payload_bytes": 301
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "4S82",
+      "kind": "peer",
+      "text": "Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\n\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \n\nFINAL: D",
+      "payload_tokens": 120,
+      "payload_bytes": 667
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\n\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \n\nFINAL: D",
+      "payload_tokens": 120,
+      "payload_bytes": 667
+    },
+    {
+      "sender": "4S82",
+      "recipient": "urJN",
+      "kind": "peer",
+      "text": "The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D",
+      "payload_tokens": 49,
+      "payload_bytes": 270
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\n\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \n\nFINAL: D",
+      "payload_tokens": 120,
+      "payload_bytes": 667
+    },
+    {
+      "sender": "4S82",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D",
+      "payload_tokens": 49,
+      "payload_bytes": 270
+    },
+    {
+      "sender": "urJN",
+      "recipient": "hxQW",
+      "kind": "peer",
+      "text": "The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D",
+      "payload_tokens": 49,
+      "payload_bytes": 270
+    },
+    {
+      "sender": "YSwX",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "Several factors influence where older adults move after retirement, including job opportunities, healthcare access, and lifestyle preferences. Texas and California are known for their large populations and diverse economies, making them popular destinations for retirees. Hawaii is known for its scenic beauty and quality of life, which can attract retirees. Vermont is a smaller state with a strong sense of community and a slower pace of life, which may appeal to those seeking a more tranquil environment.\n\nGiven the options, Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. \n\nFINAL: D",
+      "payload_tokens": 120,
+      "payload_bytes": 667
+    },
+    {
+      "sender": "4S82",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The peer report indicates that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D",
+      "payload_tokens": 49,
+      "payload_bytes": 270
+    },
+    {
+      "sender": "urJN",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The peer reports indicate that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties. These factors make Vermont an attractive option for older adults seeking a more tranquil environment.\n\nFINAL: D",
+      "payload_tokens": 49,
+      "payload_bytes": 270
+    },
+    {
+      "sender": "hxQW",
+      "recipient": "Kbpq",
+      "kind": "aggregate",
+      "text": "The peer reports highlight that Vermont is often cited as a destination for retirees due to its rural setting, lower cost of living, and strong community ties, which appeal to those seeking a more tranquil environment. These factors make Vermont an attractive option for older adults moving to a new state after retirement.\n\nFINAL: D",
+      "payload_tokens": 61,
+      "payload_bytes": 333
+    }
+  ],
+  "routes": [],
+  "local_decision": null,
+  "embedding_events": [],
+  "embedding_wall_s": 0,
+  "routing_wall_s": null,
+  "usage_complete": true,
+  "llm_calls": 9,
+  "total_online_tokens": 4373,
+  "peer_messages": 10,
+  "peer_payload_tokens": 760,
+  "peer_payload_bytes": 4214,
+  "all_logical_deliveries": 14,
+  "all_delivered_payload_tokens": 1039,
+  "candidate_messages": null,
+  "hard_budget_violations": 0,
+  "actual_network_bytes": null,
+  "network_note": "In-process semantic-policy study; physical transport measured separately."
+}

@@ -1,0 +1,13 @@
+{
+  "early_unanimity_stop": "mapped to route_fixed; no duplicate stage task",
+  "same_answer_suppression": "mapped to toggle_filter; no duplicate stage task",
+  "answer_grouping": "remove_answer_grouping: retain every distinct sender after dissent filtering",
+  "representative_ranking": "remove_representative_rank: first candidate in original sender order per answer group, instead of evidence/length ranking",
+  "global_vote_summary": "remove_vote_summary: remove prior answer-summary delivery and prompt addition; peer reports retained",
+  "recipient_cap": "k=N-1 in executed source; cap removal is identical and adds no distinct setting",
+  "payload_truncation": "unset in executed source; no active stage to remove",
+  "candidate_scoring": "answer_key parsing/ranking only; no embeddings or paid router in AgentRoute; profiler records actual stage functions",
+  "local_selector": "aggregation_controls plus fixed routing/dense controls form required 2x2",
+  "random_fixed_note": "Frozen old random_fixed k=3 equals N-1 at N=4; all candidates survive; report this degeneracy rather than claim sparse random advantage",
+  "source": "package/agentroute/evidence_policy.py"
+}
