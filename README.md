@@ -47,7 +47,7 @@ The current run is **in progress**. Link calibration is not completion of the 90
 
 ## Raw data and recovery
 
-Large raw results are prepared for publication as version-labelled assets on the repository's [Releases page](https://github.com/smfatima3/AgentRoute/releases). Every local results directory is included in the transfer, including historical/failed evidence. Historical results are never relabelled as the current study. Download the desired assets, compare SHA-256 to `data/RELEASE_ASSETS.json`, and extract at the repository root. Each new archive also contains a per-file `TRANSFER_MANIFEST.json`.
+Large raw results are published as version-labelled assets on the repository's [Releases page](https://github.com/smfatima3/AgentRoute/releases). Every local results directory is included in the transfer, including historical/failed evidence. Historical results are never relabelled as the current study. Download the desired assets, compare SHA-256 to `data/RELEASE_ASSETS.json`, and extract at the repository root. Each new archive also contains a per-file `TRANSFER_MANIFEST.json`.
 
 The `agentroute_v12_completion.zip` snapshot includes 1,540 hash-verified raw model records under `outputs/agentroute_v12_completion/analysis_inputs/raw/`; filenames are content hashes to avoid Windows path-length problems. The original scientific task IDs and source paths remain in the receipt and download manifests. A later transport-data snapshot is pending; a recovery launch has not yet been verified.
 
